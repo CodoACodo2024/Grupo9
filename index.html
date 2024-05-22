@@ -114,24 +114,30 @@
             </div>
         </section>    
         
+        
         <section id="registrarse" class="hidden">
             <div class="form-container">
+                <h2>Registrarse</h2>
                 <form id="register-form">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="nombre" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="apellido" class="form-label">Apellido</label>
                         <input type="text" class="form-control" id="apellido" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="inputEmail4" class="form-label">Email</label>
                         <input type="email" class="form-control" id="inputEmail4" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="inputPassword4" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" id="inputPassword4" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="repeatPassword4" class="form-label">Repetir contraseña</label>
+                        <input type="password" class="form-control" id="repeatPassword4" required>
                     </div>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">Dirección</label>
@@ -141,11 +147,11 @@
                         <label for="telefono" class="form-label">Teléfono</label>
                         <input type="text" class="form-control" id="telefono" placeholder="*Código de área + Teléfono*" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="inputCity" class="form-label">Ciudad</label>
                         <input type="text" class="form-control" id="inputCity" required>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <label for="inputState" class="form-label">Provincia</label>
                         <select id="inputState" class="form-select" required>
                             <option selected disabled value="">Elegir...</option>
@@ -155,19 +161,19 @@
                             <option>Misiones</option>
                         </select>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-6">
                         <label for="inputZip" class="form-label">CP</label>
                         <input type="text" class="form-control" id="inputZip" required>
                     </div>
             
                     <!--ACLARACIONES Y PAGO-->
                     <div class="col-12">
-                        <label for="aclaraciones" class="form-label">ACLARACIONES</label>
-                        <input type="text" class="form-control" id="aclaraciones">
+                        <label for="pago" class="form-label">Forma de Pago</label>
+                        <input type="text" class="form-control" id="pago">
                     </div>
                     <div class="col-12">
-                        <label for="pago" class="form-label">Formas de pago aceptadas</label>
-                        <input type="text" class="form-control" id="pago">
+                        <label for="aclaraciones" class="form-label">Aclaraciones </label>
+                        <input type="text" class="form-control" id="aclaraciones">
                     </div> 
             
                     <!--SERVICIOS Y HORARIOS-->
@@ -236,9 +242,9 @@
                         </div>
                     </div>
             
-                    <div class="col-12">
+                    <div class="col-3 d-flex justify-content-between">
                         <button type="submit" class="btn btn-primary">Registrar</button>
-                        <a href="../index.html" class="btn btn-secondary">Cancelar</a>
+                        <a href="#home" class="btn btn-secondary">Cancelar</a>
                     </div>
                 </form>
             </div>
