@@ -9,5 +9,6 @@ Repositorio para Codo a Codo - Equipo
 
 ## Proyecto:
 
-Lavandaría
+Lavandaría: WeWash
+
 ## Funcionalidades
