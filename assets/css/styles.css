@@ -59,18 +59,23 @@ footer {
     color: #bbb;
 }
 
-.form-container {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0; 
-    padding-top: 20px;
-    padding-bottom: 20px;
+.full-width {
+    width: 100%;
 }
 
-.form-container h2 {
-    margin-bottom: 20px; 
+.full-width {
+    width: 100%;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 form {
@@ -80,22 +85,21 @@ form {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 50%;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 20px;
 }
 
-form label, 
-form input, 
-form textarea, 
-form select, 
+form label,
+form input,
+form textarea,
+form select,
 form button {
     width: 100%;
-    margin-bottom: 1em;
     transition: all 0.3s ease;
 }
 
-form input:focus, 
-form textarea:focus, 
+form input:focus,
+form textarea:focus,
 form select:focus {
     border-color: #ff6347;
     box-shadow: 0 0 5px rgba(255, 99, 71, 0.5);
