@@ -211,10 +211,10 @@
             </div>
         </section>    
         
-        <!--REGISTRO/DATOS PERSONALES-->
+        
         <section id="registrarse" class="hidden">
             <div class="form-container">
-                <h2>Contratar Servicio</h2>
+                <h2>Registrarse</h2>
                 <form id="register-form">
                     <div class="col-md-12">
                         <label for="nombre" class="form-label">Nombre</label>
@@ -262,77 +262,74 @@
                         <label for="inputZip" class="form-label">CP</label>
                         <input type="text" class="form-control" id="inputZip" required>
                     </div>
-
-             
-            <!-- SERVICIOS -->
-            <fieldset class="row mb-3">
-                <legend class="col-form-label col-sm-2 pt-0">Servicios</legend>
-                <div class="col-sm-5">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Lavado" checked required>
-                        <label class="form-check-label" for="gridRadios1">Lavado</label>
+            
+                    <!--ACLARACIONES Y PAGO-->
+                    <div class="col-12">
+                        <label for="pago" class="form-label">Forma de Pago</label>
+                        <input type="text" class="form-control" id="pago">
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Secado" required>
-                        <label class="form-check-label" for="gridRadios2">Secado</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Lavado y Secado" required>
-                        <label class="form-check-label" for="gridRadios3">Lavado y Secado</label>
-                    </div>
-                </div>
-            </fieldset>
-
-            <!-- TURNOS -->
-            <div class="row mb-3">
-                <legend class="col-form-label col-sm-2 pt-0">Turnos</legend>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                        <label class="form-check-label" for="gridCheck1">Mañana</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck2">
-                        <label class="form-check-label" for="gridCheck2">Tarde</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck3">
-                        <label class="form-check-label" for="gridCheck3">Noche</label>
-                    </div>
-                </div>
-            </div>
-
-             <!-- ACLARACIONES Y PAGO -->
-             <div class="col-10">
-                <label class="form-label">Forma de Pago</label>
-                <div class="row-3">
-                    <div class="col-sm-10 offset-sm-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="pagoEfectivo" name="pago" value="efectivo">
-                            <label class="form-check-label" for="pagoEfectivo">Efectivo</label>
+                    <div class="col-12">
+                        <label for="aclaraciones" class="form-label">Aclaraciones </label>
+                        <input type="text" class="form-control" id="aclaraciones">
+                    </div> 
+            
+                    <!--SERVICIOS Y HORARIOS-->
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Servicios</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Lavado" checked required>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Lavado
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Secado" required>
+                                <label class="form-check-label" for="gridRadios2">
+                                    Secado
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Lavado y Secado" required>
+                                <label class="form-check-label" for="gridRadios3">
+                                    Lavado y Secado
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="pagoDebito" name="pago" value="debito">
-                            <label class="form-check-label" for="pagoDebito">Débito</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="pagoTransferencia" name="pago" value="transferencia">
-                            <label class="form-check-label" for="pagoTransferencia">Transferencia</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="pagoCredito" name="pago" value="credito">
-                            <label class="form-check-label" for="pagoCredito">Crédito</label>
+                    </fieldset>
+            
+                    <div class="row mb-3">
+                      <legend class="col-form-label col-sm-2 pt-0">Turnos</legend>
+                        <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Mañana
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <label for="aclaraciones" class="form-label">Aclaraciones</label>
-                <input type="text" class="form-control" id="aclaraciones">
-            </div>
-
-                              
+                    <div class="row mb-3">
+                        <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                <label class="form-check-label" for="gridCheck2">
+                                    Tarde
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                <label class="form-check-label" for="gridCheck3">
+                                    Noche
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+            
                     <div class="col-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="gridCheck" required>
@@ -342,7 +339,7 @@
                         </div>
                     </div>
             
-                    <div class="col-4 d-flex justify-content-between">
+                    <div class="col-3 d-flex justify-content-between">
                         <button type="submit" class="btn btn-primary">Registrar</button>
                         <a href="#home" class="btn btn-secondary">Cancelar</a>
                     </div>
@@ -361,6 +358,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
