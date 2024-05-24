@@ -68,16 +68,6 @@ footer {
 }
 
 
-.form-container {
-   /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
-    background-color: #f0f0f0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -142,37 +132,40 @@ form button:hover {
 }
 
 
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
+/*FORMULARIO DE CONTRATAR EL SERVICIO*/
+#registrarse {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width: 480px) {
-    #home {
-        flex-direction: column;
-        height: 60vh;
-    }
-}
+#registrarse h2 {
+    font-size: 1.7em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+} 
 
 /*FORMULARIO CONTACTO*/
-.container{
+#contacto .container{
     width: 1000px!important;
-   
 }
-p{
+
+#contacto p{
     font-size: 12px;
 }
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+
+#contacto h1{
+    font-family: 'Roboto', sans-serif;;
 }
-.bg-primary{
+
+#contacto .bg-primary{
     background-color: #01d28e !important ;
-    font-family:Verdana, Geneva, Tahoma, sans-serif!important;
+    font-family:'Roboto', sans-serif;
 
 }
-.form-control  {
+
+#contacto .form-control  {
     height: 36px;
     background: #fff;
     color: rgba(0, 0, 0, 0.8);
@@ -181,55 +174,52 @@ h1{
     box-shadow: none !important;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.contactForm .form-control {
+
+#contacto .contactForm .form-control {
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
-    
+
 }
 
-.form-control:focus,.form-control:active {
+#contacto .form-control:focus,.form-control:active {
     border-color: #01d28e !important;
 }
 
-.form-check  {
+#contacto .form-check  {
     color: #000;
-    
+
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-.form-label  {
+#contacto .form-label  {
     color: #000;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-.btn.btn-primary {
+
+#contacto .btn.btn-primary {
     background: #01d28e !important;
     border-color: #01d28e !important;
     color: #fff;
     width: 100px;
     border-radius: 0!important;
-    
+
 }
-.btn.btn-primary:hover{
+
+#contacto .btn.btn-primary:hover{
     background-color: #28a745!important;
 }
 
-.bi{
+#contacto .bi{
     font-size: 50px;
 }
-@media only screen and (max-width: 600px) {
-    .container{
-        width: 100%!important;
-        padding-bottom: 207px!important;
-    }
-  }
-  
-  .social-icon{
+
+#contacto .social-icon{
     color: #fff;
     height:2px;
     margin-right: 40px;
@@ -287,7 +277,7 @@ h1{
     transform: scale(1.05);
 }
 
-.testimonials {
+.testimonios {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
@@ -295,7 +285,7 @@ h1{
     margin-top: 20px;
 }
 
-.testimonials blockquote {
+.testimonios blockquote {
     font-style: italic;
     color: #444;
     border-left: 4px solid #007BFF;
@@ -303,14 +293,14 @@ h1{
     padding-left: 15px;
 }
 
-.testimonials cite {
+.testimonios cite {
     display: block;
     text-align: right;
     color: #888;
     margin-top: 10px;
 }
 
-.statistics {
+.estadisticas {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
@@ -319,13 +309,13 @@ h1{
     margin-top: 20px;
 }
 
-.statistics p {
+.estadisticas p {
     font-size: 1.2em;
     color: #333;
     margin: 10px 0;
 }
 
-.statistics p strong {
+.estadisticas p strong {
     font-size: 1.5em;
     color: #007BFF;
 }
@@ -427,3 +417,26 @@ h1{
 .offer-service a:hover {
     background-color: #0056b3;
 }
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%!important;
+        padding-bottom: 207px!important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #home {
+        flex-direction: column;
+        height: 60vh;
+    }
+}
+
+ 

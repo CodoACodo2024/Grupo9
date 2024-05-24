@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" href="favicon.ico"> 
 </head>
 <body>
     <header>
@@ -19,7 +22,7 @@
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
                     <li><a href="#services" class="nav-link">Servicios</a></li>
-                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
                     <li><a href="#registrarse" class="nav-link">Contratar el servicio</a></li>
                     <li><a href="#registrarproveedor" class="nav-link">Registrar proveedor</a></li>
                 </ul>
@@ -89,7 +92,7 @@
                     <img src="./assets/img/dobladodeprendas_persona.jpg" alt="">
                 </div>
         
-                <div class="testimonials">
+                <div class="testimonios">
                     <h3>Testimonios de Clientes</h3>
                     <blockquote>
                         <p>"La mejor experiencia con el servicio de lavandería. Rápido, eficiente y a buen precio. ¡Totalmente recomendable!"</p>
@@ -101,7 +104,7 @@
                     </blockquote>
                 </div>
 
-                <div class="statistics">
+                <div class="estadisticas">
                     <h3>Nuestras Estadísticas</h3>
                     <p><strong>5000+</strong> Clientes satisfechos</p>
                     <p><strong>200+</strong> Lavaderos asociados</p>
@@ -141,37 +144,102 @@
                 </div>
             </div>
         </section>
-        
-        <section id="contact" class="hidden">
-            <div class="form-container">
-                <h2>Contacto</h2>
-                <form id="contact-form">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    
-                    <label for="reason">Razón del contacto:</label>
-                    <select id="reason" name="reason" required>
-                        <option value="">Seleccione una opción</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="sugerencia">Sugerencia</option>
-                        <option value="reclamo">Reclamo</option>
-                    </select>
-            
-                    <label for="newsletter">
-                        <input type="checkbox" id="newsletter" name="newsletter">
-                        ¿Desea recibir nuestro boletín informativo?
-                    </label>
-            
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>    
+
+        <section id="contacto" class="hidden">
+            <form id="contact-form" class="container mt-5 shadow">
+                <div>
+                    <div class="row ">
+                        <div class="col-md-4 bg-primary p-5 text-white ">
+                            <h2>Contactate con nosotros</h2>
+                            <p>Si tenés una consulta o reclamo, completa este formulario. Te responderemos lo antes posible.</p>
+
+                            <div class="d-flex mt-2">
+                                <i class="bi bi-telephone-forward"></i>
+                                <p class="mt-4 ms-3">Teléfono: +54 351 2634588</p>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <i class="bi bi-envelope"></i>
+                                <p class="mt-4 ms-3">Email : wewash@gmail.com</p>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <p class="mt-3 ms-3">¡Seguinos!</p>
+
+                            </div>
+                            <div class="d-flex mt-2">
+                                <a href="https://instagram.com" target="_blank" class="social-icon">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://tiktok.com" target="_blank" class="social-icon">
+                                    <i class="bi bi-tiktok"></i>
+                                </a>
+                                <a href="https://facebook.com" target="_blank" class="social-icon">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8 p-5 ">
+                            <h2>Contacto</h2>
+                            <div class="d-flex mt-3 mb-4">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="cliente" value="cliente" checked>
+                                    <label class="form-check-label" for="cliente">
+                                        Soy cliente
+                                    </label>
+                                </div>
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="empresa" value="empresa">
+                                    <label class="form-check-label" for="empresa">
+                                        Soy proveedor
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 d-inline">
+                                        <label for="inputNombre" class="form-label">Nombre*</label>
+                                        <input type="text" class="form-control" id="inputNombre" required>
+                                    </div>
+                                    <div class="col-md-6 d-inline">
+                                        <label for="inputApellido" class="form-label">Apellido*</label>
+                                        <input type="text" class="form-control" id="inputApellido" required>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6 d-inline">
+                                        <label for="inputTelefono" class="form-label">Teléfono*</label>
+                                        <input type="tel" class="form-control" id="inputTelefono" required>
+                                    </div>
+                                    <div class="col-md-6 d-inline">
+                                        <label for="inputEmail" class="form-label">Correo electrónico*</label>
+                                        <input type="email" class="form-control" id="inputEmail" required>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6 d-inline">
+                                        <label for="Empresa" class="form-label">Empresa</label>
+                                        <input type="text" class="form-control" id="Empresa">
+                                    </div>
+                                    <div class="col-md-6 d-inline">
+                                        <label for="Sitio Web" class="form-label">Sitio Web</label>
+                                        <input type="url" class="form-control" id="Sitio Web">
+                                    </div>
+
+                                </div>
+                                <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>    
+        </section>
         
         <section id="registrarproveedor" class="hidden">
             <div class="container">
@@ -182,6 +250,7 @@
 
         <section id="registrarse" class="hidden">
             <div class="form-container">
+                <h2>Contratar el servicio</h2>
                 <form id="register-form">
                     <div class="col-md-6">
                         <label for="nombre" class="form-label">Nombre</label>
@@ -225,8 +294,8 @@
                         <label for="inputZip" class="form-label">CP</label>
                         <input type="text" class="form-control" id="inputZip" required>
                     </div>
-            
-                    <!--ACLARACIONES Y PAGO-->
+        
+                    <!-- ACLARACIONES Y PAGO -->
                     <div class="col-12">
                         <label for="pago" class="form-label">Forma de Pago</label>
                         <input type="text" class="form-control" id="pago">
@@ -235,8 +304,8 @@
                         <label for="aclaraciones" class="form-label">Aclaraciones </label>
                         <input type="text" class="form-control" id="aclaraciones">
                     </div> 
-            
-                    <!--SERVICIOS Y HORARIOS-->
+        
+                    <!-- SERVICIOS Y HORARIOS -->
                     <fieldset class="row mb-3">
                         <legend class="col-form-label col-sm-2 pt-0">Servicios</legend>
                         <div class="col-sm-10">
@@ -260,9 +329,9 @@
                             </div>
                         </div>
                     </fieldset>
-            
+        
                     <div class="row mb-3">
-                      <legend class="col-form-label col-sm-2 pt-0">Turnos</legend>
+                        <legend class="col-form-label col-sm-2 pt-0">Turnos</legend>
                         <div class="col-sm-10 offset-sm-2">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck1">
@@ -270,20 +339,12 @@
                                     Mañana
                                 </label>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-10 offset-sm-2">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck2">
                                 <label class="form-check-label" for="gridCheck2">
                                     Tarde
                                 </label>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-10 offset-sm-2">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck3">
                                 <label class="form-check-label" for="gridCheck3">
@@ -292,7 +353,7 @@
                             </div>
                         </div>
                     </div>
-            
+        
                     <div class="col-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="gridCheck" required>
@@ -301,8 +362,8 @@
                             </label>
                         </div>
                     </div>
-            
-                    <div class="col-3 d-flex justify-content-between">
+        
+                    <div class="col-12 d-flex justify-content-between">
                         <button type="submit" class="btn btn-primary">Registrar</button>
                         <a href="../index.html" class="btn btn-secondary">Cancelar</a>
                     </div>
