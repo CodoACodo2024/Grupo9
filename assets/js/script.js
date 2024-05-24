@@ -17,6 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Mostrar la sección "home" por defecto
+    const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#inputPassword5');
+        const togglePasswordIcon = document.querySelector('#togglePasswordIcon');
+
+        togglePassword.addEventListener('click', function (e) {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+
+            togglePasswordIcon.textContent = type === 'password' ? 'Mostrar' : 'Ocultar';
+        });
+
     document.getElementById('home').classList.remove('hidden');
 });

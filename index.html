@@ -8,10 +8,11 @@
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Use only one version of Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Remove the duplicate and conflicting versions -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="icon" href="favicon.ico"> 
 </head>
 <body>
     <header>
@@ -23,7 +24,8 @@
                     <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
                     <li><a href="#services" class="nav-link">Servicios</a></li>
                     <li><a href="#contacto" class="nav-link">Contacto</a></li>
-                    <li><a href="#registrarse" class="nav-link">Contratar el servicio</a></li>
+                    <li><a href="#registrarse" class="nav-link">Registrarse</a></li>
+                    <li><a href="#contratarservicio" class="nav-link">Contratar servicio</a></li>
                     <li><a href="#registrarproveedor" class="nav-link">Registrar proveedor</a></li>
                 </ul>
             </div>
@@ -180,15 +182,15 @@
                         <div class="col-md-8 p-5 ">
                             <h2>Contacto</h2>
                             <div class="d-flex mt-3 mb-4">
-                                <div class="form-check me-3">
+                                <div class="form-check form-check-inline me-3">
                                     <input class="form-check-input" type="radio" name="tipoUsuario" id="cliente" value="cliente" checked>
                                     <label class="form-check-label" for="cliente">
                                         Soy cliente
                                     </label>
                                 </div>
-                                <div class="form-check me-3">
-                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="empresa" value="empresa">
-                                    <label class="form-check-label" for="empresa">
+                                <div class="form-check form-check-inline me-3">
+                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="cliente" value="cliente" checked>
+                                    <label class="form-check-label" for="cliente">
                                         Soy proveedor
                                     </label>
                                 </div>
@@ -250,7 +252,7 @@
 
         <section id="registrarse" class="hidden">
             <div class="form-container">
-                <h2>Contratar el servicio</h2>
+                <h2>Registrarse</h2>
                 <form id="register-form">
                     <div class="col-md-6">
                         <label for="nombre" class="form-label">Nombre</label>
@@ -268,6 +270,29 @@
                         <label for="inputPassword4" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" id="inputPassword4" required>
                     </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword5" class="form-label">Repetir contraseña</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="inputPassword5" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                    <span id="togglePasswordIcon">Mostrar</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 button-container">
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                        <a href="../index.html" class="btn btn-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="contratarservicio" class="hidden">
+            <div class="form-container">                
+                <form id="register-form">
+                    <h2>Contratar el servicio</h2>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">Dirección</label>
                         <input type="text" class="form-control" id="inputAddress" placeholder="*Calle 1234*" required>
@@ -294,17 +319,7 @@
                         <label for="inputZip" class="form-label">CP</label>
                         <input type="text" class="form-control" id="inputZip" required>
                     </div>
-        
-                    <!-- ACLARACIONES Y PAGO -->
-                    <div class="col-12">
-                        <label for="pago" class="form-label">Forma de Pago</label>
-                        <input type="text" class="form-control" id="pago">
-                    </div>
-                    <div class="col-12">
-                        <label for="aclaraciones" class="form-label">Aclaraciones </label>
-                        <input type="text" class="form-control" id="aclaraciones">
-                    </div> 
-        
+                    
                     <!-- SERVICIOS Y HORARIOS -->
                     <fieldset class="row mb-3">
                         <legend class="col-form-label col-sm-2 pt-0">Servicios</legend>
@@ -353,7 +368,22 @@
                             </div>
                         </div>
                     </div>
-        
+                     <!-- ACLARACIONES Y PAGO -->
+                    <div class="col-12">
+                        <label for="pago" class="form-label">Forma de Pago</label>
+                        <select id="inputPago" class="form-select" required>
+                            <option selected disabled value="">Elegir...</option>
+                            <option>Efectivo</option>
+                            <option>Transferencia</option>
+                            <option>Crédito</option>
+                            <option>Débito</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="aclaraciones" class="form-label">Aclaraciones </label>
+                        <input type="text" class="form-control" id="aclaraciones">
+                    </div> 
+
                     <div class="col-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="gridCheck" required>
@@ -363,8 +393,8 @@
                         </div>
                     </div>
         
-                    <div class="col-12 d-flex justify-content-between">
-                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    <div class="col-12 button-container">
+                        <button type="submit" class="btn btn-primary">Aceptar</button>
                         <a href="../index.html" class="btn btn-secondary">Cancelar</a>
                     </div>
                 </form>
@@ -383,7 +413,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script src="script.js"></script>
+    
 </body>
 </html>

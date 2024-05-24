@@ -20,6 +20,13 @@ body {
     margin: auto;
 }
 
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
 .navbar .container {
     display: flex;
     justify-content: space-between;
