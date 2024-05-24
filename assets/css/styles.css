@@ -7,11 +7,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 
 .header, .navbar, .footer {
-    background-color: #333;
-    color: #fff;
+    background-color:  #01d28e !important;
     padding: 1em 0;
 }
 
@@ -24,24 +24,28 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     margin-bottom: 0px;
-
 }
 
 .nav-links li a {
     color: #fff;
+    font-size: 1.15rem;
+    font-weight: 500;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    color: #ff6347;
+    color: #4756ff;
+}
+
+.invisible {
+    visibility: hidden; 
 }
 
 #home {
@@ -55,8 +59,11 @@ body {
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #222;
-    color: #bbb;
+    background-color: #01d28e !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+
 }
 
 .full-width {
@@ -66,7 +73,6 @@ footer {
 .full-width {
     width: 100%;
 }
-
 
 form {
     display: flex;
@@ -107,10 +113,6 @@ form button {
     color: #fff;
     border: none;
     cursor: pointer;
-}
-
-form button:hover {
-    background-color: #ff6347;
 }
 
 .carousel-caption {
@@ -162,7 +164,6 @@ form button:hover {
 #contacto .bg-primary{
     background-color: #01d28e !important ;
     font-family:'Roboto', sans-serif;
-
 }
 
 #contacto .form-control  {
@@ -179,7 +180,6 @@ form button:hover {
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
-
 }
 
 #contacto .form-control:focus,.form-control:active {
@@ -188,12 +188,12 @@ form button:hover {
 
 #contacto .form-check  {
     color: #000;
-
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
+
 #contacto .form-label  {
     color: #000;
     text-transform: uppercase;
@@ -208,7 +208,6 @@ form button:hover {
     color: #fff;
     width: 100px;
     border-radius: 0!important;
-
 }
 
 #contacto .btn.btn-primary:hover{
