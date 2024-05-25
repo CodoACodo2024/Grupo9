@@ -82,7 +82,7 @@ footer {
 }
 
 form {
-    font-family: 'Roboto', sans-serif;
+    
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -95,14 +95,13 @@ form {
 
 .form-check-label {
     margin-left: 0.5rem; 
-    font-family: 'Roboto', sans-serif;
-    
+       
 }
 .form-check-input {
     margin-right: 10rem; 
 }
 
-form textarea,
+form textarea, 
 form select,
 form button {
     width: 100%;
@@ -171,6 +170,10 @@ form button {
     color: #fff;
     width: 100px;
     border-radius: 5px;
+}
+
+.btn.btn-primary:hover{
+    background-color: #28a745!important;
 }
 
 /*FORMULARIO CONTACTO*/
