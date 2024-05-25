@@ -82,6 +82,7 @@ footer {
 }
 
 form {
+    
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -92,9 +93,15 @@ form {
     padding: 20px;
 }
 
-form label,
-form input,
-form textarea,
+.form-check-label {
+    margin-left: 0.5rem; 
+       
+}
+.form-check-input {
+    margin-right: 10rem; 
+}
+
+form textarea, 
 form select,
 form button {
     width: 100%;
@@ -110,7 +117,7 @@ form select:focus {
 
 form input[type="checkbox"] {
     width: auto;
-    margin-right: 0.5em;
+    margin-right: 0.25em;
 }
 
 form button {
@@ -145,7 +152,8 @@ form button {
 #registrarse {
     padding: 50px 20px;
     background-color: #f0f0f0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;                
+
 }
 
 #registrarse h2 {
@@ -153,7 +161,20 @@ form button {
     color: #333;
     margin-bottom: 20px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 } 
+
+.btn.btn-primary {
+    background: #01d28e !important;
+    border-color: #01d28e !important;
+    color: #fff;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.btn.btn-primary:hover{
+    background-color: #28a745!important;
+}
 
 /*FORMULARIO CONTACTO*/
 #contacto .container{
@@ -165,7 +186,7 @@ form button {
 }
 
 #contacto h1{
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 
 #contacto .bg-primary{

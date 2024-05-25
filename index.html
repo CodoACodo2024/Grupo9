@@ -252,25 +252,26 @@
 
         <section id="registrarse" class="hidden">
             <div class="form-container">
-                <h2>Registrarse</h2>
+                
                 <form id="register-form">
-                    <div class="col-md-6">
+                    <h2>Registrarse</h2>
+                    <div class="col-md-12">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="nombre" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="apellido" class="form-label">Apellido</label>
                         <input type="text" class="form-control" id="apellido" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="inputEmail4" class="form-label">Email</label>
                         <input type="email" class="form-control" id="inputEmail4" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="inputPassword4" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" id="inputPassword4" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="inputPassword5" class="form-label">Repetir contraseña</label>
                         <div class="input-group">
                             <input type="password" class="form-control" id="inputPassword5" required>
@@ -301,11 +302,11 @@
                         <label for="telefono" class="form-label">Teléfono</label>
                         <input type="text" class="form-control" id="telefono" placeholder="*Código de área + Teléfono*" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="inputCity" class="form-label">Ciudad</label>
                         <input type="text" class="form-control" id="inputCity" required>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-12">
                         <label for="inputState" class="form-label">Provincia</label>
                         <select id="inputState" class="form-select" required>
                             <option selected disabled value="">Elegir...</option>
@@ -315,7 +316,7 @@
                             <option>Misiones</option>
                         </select>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-12">
                         <label for="inputZip" class="form-label">CP</label>
                         <input type="text" class="form-control" id="inputZip" required>
                     </div>
@@ -323,12 +324,13 @@
                     <!-- SERVICIOS Y HORARIOS -->
                     <fieldset class="row mb-3">
                         <legend class="col-form-label col-sm-2 pt-0">Servicios</legend>
-                        <div class="col-sm-10">
+                        <div class="col-sm-10 offset-sm-2 pt-0">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Lavado" checked required>
                                 <label class="form-check-label" for="gridRadios1">
                                     Lavado
                                 </label>
+                               
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Secado" required>
@@ -344,7 +346,7 @@
                             </div>
                         </div>
                     </fieldset>
-        
+                    
                     <div class="row mb-3">
                         <legend class="col-form-label col-sm-2 pt-0">Turnos</legend>
                         <div class="col-sm-10 offset-sm-2">
