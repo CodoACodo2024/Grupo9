@@ -31,8 +31,29 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+.navbar-brand {
+  
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* Ajusta el color del texto según tus necesidades */
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-brand .logo {
+    height: 60px; /* Ajusta el tamaño del logo */
+    margin-left: 5px;
+    margin-bottom: -10px;
+   
 }
 
+.navbar-brand .brand-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
 .nav-links {
     list-style: none;
     display: flex;
@@ -48,7 +69,8 @@ body {
 }
 
 .nav-links li a:hover {
-    color: #4756ff;
+    color: #444444;
+    font-weight: bold;
 }
 
 .invisible {
@@ -722,5 +744,10 @@ form button {
     .register-col-content, .form-container {
         width: 100%;
         padding: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .overlay-img-register {
+        background-image: none;
     }
 }
