@@ -746,6 +746,7 @@ form button {
         padding: 15px;
     }
 }
+
 @media (max-width: 768px) {
     .overlay-img-register {
         background-image: none;
