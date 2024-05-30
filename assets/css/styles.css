@@ -607,7 +607,7 @@ form button {
 .row {
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
+    width: 95%;
 }
 
 .register-col-content {
