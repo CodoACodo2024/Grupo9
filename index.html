@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeWash - Grupo 9</title>
     <link rel="stylesheet" href="./Frontend/assets/css/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="./assets/img/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Use only one version of Bootstrap -->
@@ -18,15 +18,21 @@
     <header>
         <nav class="navbar">
             <div class="container">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="#home" class="navbar-brand">
+                        <img src="assets/img/logo.png" alt="WeWash Logo" class="logo">
+                        <span class="brand-name animated-title">WeWash</span>
+                    </div>
                 <a href="#home" class="nav-link invisible">WeWash</a>
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
                     <li><a href="#services" class="nav-link">Servicios</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
-                    <li><a href="#registrarse" class="nav-link">Registrarse</a></li>
                     <li><a href="#contratarservicio" class="nav-link">Contratar servicio</a></li>
                     <li><a href="#registrarproveedor" class="nav-link">Registrar proveedor</a></li>
+                    <li><a href="#registrarse" class="nav-link">Registrarse</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -162,7 +168,9 @@
                     <div class="row ">
                         <div class="col-md-4 bg-primary p-5 text-white ">
                             <h2>Contactate con nosotros</h2>
-                            <p>Si tenés una consulta o reclamo, completa este formulario. Te responderemos lo antes posible.</p>
+                            <p>Si tenés una consulta o reclamo, <br>
+                                completa este formulario.<br>
+                             Te responderemos lo antes posible.</p>
 
                             <div class="d-flex mt-2">
                                 <i class="bi bi-telephone-forward"></i>
@@ -253,9 +261,79 @@
         </section>
         
         <section id="registrarproveedor" class="hidden">
-            <div class="container">
-                <h2>Bienvenido proveedor</h2>
-                <p>Aquí te podrás registrar como proveedor</p>
+            <div class="row" >
+                <div class="col-xl-6 col-lg-6 col-md-5 register-col-content overlay-img-register" >
+                    <h1 class="mb-5 mt-5">Registre su tienda en WeWash!</h1>
+                    <p class="description">Sumándose a la plataforma podrán <b>atraer nuevos clientes y generar ingresos extras.</b></p>
+                    <h2 class="text-center m-5">
+                        Ser parte de WeWash no tiene costo ni adhesión ni de mantenimiento.
+                        <br>
+                        <br>
+                        <span class="font-weight-bold">¡SÓLO GANANCIAS!</SPAN>
+                    </h2>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-7 my-auto no-padding">
+                    <div class="authentication-form mx-auto form-container">
+                        <div class="logo-centered text-center">
+                            <a href="#">
+                                <img src="./assets/img/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <h3 class="text-center">Crear cuenta</h3>
+                        <form class="authentication-form mx-auto">
+                            <div class="group material-input">
+                                <input required="required" name="store_name" type="text" value="">
+                                <span class="highlight"></span>
+                                <label>Nombre de la Lavandería</label>
+                            </div>
+                            <div class="group material-input">
+                                <input required="required" name="email" type="email" value="">
+                                <span class="highlight"></span>
+                                <label>Email</label>
+                            </div>
+                            <div class="group material-input">
+                                <input required="required" name="password" type="password" value="">
+                                <span class="highlight"></span>
+                                <label>Contraseña</label>
+                            </div>
+                            <div class="mb-0 group material-input">
+                                <input required="required" name="telephone" type="tel" value="">
+                                <span class="highlight"></span>
+                                <label>Teléfono</label>
+                            </div>
+                            <div class="mb-5 group material-input">
+                             <label>*Cod. País + Teléfono. Ej: +54 11 35884577</label>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <br>
+                            <div class="col text-left">
+                                <div class="styled-checkbox">
+                                    <input id="agree"  name="terms_and_conditions" type="checkbox" value="1">
+                                    <label for="agree" style="font-size: small ; ">
+                                        
+                                        Acepto los
+                                        <a target="_blank" href="" style="color:#3863d2;">Términos y condiciones</a>
+                                        y la 
+                                        <a  target="_blank" href="" style="color: #3863d2;">Política de Privacidad.</a>
+                                        
+                                    </label>
+                                </div>
+                            </div>
+                            </div>
+                            
+                         <div class="sign-btn text-center">
+                            <input class="btn2 btn2-lg btn2-gradient-01" style="font-weight: 600!important;" type="submit" value="Crear cuenta">
+                        </div>   
+                        </form>
+                        
+                        <div class="register text-center" style="font-size:small;">
+                            Ya tienes una cuenta?
+                            <br>
+                            <a href="http://" style="color: #3863d2;">Ingresar</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
