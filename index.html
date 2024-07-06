@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +15,10 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
+
 <body>
     <header>
-        <nav class="navbar">
+        <!--<nav class="navbar">
             <div class="container">
                 <div class="container">
                     <div class="navbar-brand">
@@ -33,11 +35,43 @@
                     <li><a href="#registrarproveedor" class="nav-link">Registrar proveedor</a></li>
                     <li><a href="#registrarse" class="nav-link">Registrarse</a></li>
                     <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="#usuarios" class="nav-link">Usuarios</a></li>
+                    <li><a href="#crearusuario" class="nav-link">Crear usuario</a></li>
+                    <li><a href="#actualizarusuario" class="nav-link">Editar usuario</a></li>
+                    <li><a href="#eliminarusuario" class="nav-link">Eliminar usuario</a></li>
+                </ul>
+            </div>
+        </nav>-->
+
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="#home" class="navbar-brand">
+                        <img src="./Frontend/assets/img/logo.png" alt="WeWash Logo" class="logo">
+                        <span class="brand-name animated-title">WeWash</span>
+                    </a>
+
+                </div>
+                <a href="#home" class="nav-link invisible">WeWash</a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="#registrarse" class="nav-link">Registrarse</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">BackEnd</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#usuarios" class="nav-link">Usuarios</a></li>
+                            <li><a href="#crearusuario" class="nav-link">Crear usuario</a></li>
+                            <li><a href="#actualizarusuario" class="nav-link">Editar usuario</a></li>
+                            <li><a href="#eliminarusuario" class="nav-link">Eliminar usuario</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
-
     <main>
         <section id="home">
             <div class="container">
@@ -49,20 +83,23 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./Frontend/assets/img/carrucel/imagen1.jpg" class="d-block w-100" alt="Primera imagen">
+                            <img src="./Frontend/assets/img/carrucel/imagen1.jpg" class="d-block w-100"
+                                alt="Primera imagen">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Bienvenidos a WeWash</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./Frontend/assets/img/carrucel/imagen2.jpg" class="d-block w-100" alt="Segunda imagen">
+                            <img src="./Frontend/assets/img/carrucel/imagen2.jpg" class="d-block w-100"
+                                alt="Segunda imagen">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Sobre Nosotros</h5>
                                 <p>Información sobre nuestra empresa.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./Frontend/assets/img/carrucel/imagen3.jpg" class="d-block w-100" alt="Tercera imagen">
+                            <img src="./Frontend/assets/img/carrucel/imagen3.jpg" class="d-block w-100"
+                                alt="Tercera imagen">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Servicios</h5>
                                 <p>Descripción de nuestros servicios.</p>
@@ -84,34 +121,37 @@
         <section id="about" class="hidden">
             <div class="container">
                 <h2>Sobre Nosotros</h2>
-                <p>Somos una empresa dedicada a la vinculación entre clientes y servicios de lavandería. Brindamos la ayuda de poder tener acceso al lavado de tu ropa de manera automática y eficiente. Además, ofrecemos un espacio para los interesados en brindar su servicio de lavado.</p>
-        
-                <p>Tu lavandería online llegó a tu vida para lavar y planchar la ropa por vos. Con esta idea, recuperá tu tiempo libre, encontrá tu amigo lavandero más cercano, y empezá a limpiar en tiempo récord.</p>
-        
-                <p>Hacé tu pedido desde la comodidad de tu sofá. Elegí la fecha y la hora, lleva tu ropa a la sucursal más cercana y en 48 horas la tenés de vuelta lavada y planchada. Así de fácil y a sólo un clic desde tu smartphone.</p>
-        
+                <p>Somos una empresa dedicada a la vinculación entre clientes y servicios de lavandería. Brindamos la
+                    ayuda de poder tener acceso al lavado de tu ropa de manera automática y eficiente. Además, ofrecemos
+                    un espacio para los interesados en brindar su servicio de lavado.</p>
+                <p>Tu lavandería online llegó a tu vida para lavar y planchar la ropa por vos. Con esta idea, recuperá
+                    tu tiempo libre, encontrá tu amigo lavandero más cercano, y empezá a limpiar en tiempo récord.</p>
+                <p>Hacé tu pedido desde la comodidad de tu sofá. Elegí la fecha y la hora, lleva tu ropa a la sucursal
+                    más cercana y en 48 horas la tenés de vuelta lavada y planchada. Así de fácil y a sólo un clic desde
+                    tu smartphone.</p>
                 <div>
                     <h3>¡Hace uso de tu lavarropas y crea tu negocio!</h3>
                 </div>
-        
+
                 <div class="image-gallery">
                     <img src="./Frontend/assets/img/prendasdobladas.jpg" alt="">
                     <img src="./Frontend/assets/img/lavado.jpg" alt="">
                     <img src="./Frontend/assets/img/dobladodeprendas_persona.jpg" alt="">
                 </div>
-        
+
                 <div class="testimonios">
                     <h3>Testimonios de Clientes</h3>
                     <blockquote>
-                        <p>"La mejor experiencia con el servicio de lavandería. Rápido, eficiente y a buen precio. ¡Totalmente recomendable!"</p>
+                        <p>"La mejor experiencia con el servicio de lavandería. Rápido, eficiente y a buen precio.
+                            ¡Totalmente recomendable!"</p>
                         <cite>- María González</cite>
                     </blockquote>
                     <blockquote>
-                        <p>"Gracias a este servicio, tengo más tiempo libre para disfrutar con mi familia. ¡Increíble!"</p>
+                        <p>"Gracias a este servicio, tengo más tiempo libre para disfrutar con mi familia. ¡Increíble!"
+                        </p>
                         <cite>- Carlos Pérez</cite>
                     </blockquote>
                 </div>
-
                 <div class="estadisticas">
                     <h3>Nuestras Estadísticas</h3>
                     <p><strong>5000+</strong> Clientes satisfechos</p>
@@ -124,44 +164,59 @@
         <section id="services" class="hidden">
             <div class="container">
                 <h2>Nuestros Servicios</h2>
-                <p>Somos una empresa dedicada a la vinculación entre clientes y servicios de lavandería. Brindamos la ayuda de poder tener acceso al lavado de tu ropa de manera automática y eficiente. Además, ofrecemos un espacio para los interesados en brindar su servicio de lavado.</p>
-        
+                <p>Somos una empresa dedicada a la vinculación entre clientes y servicios de lavandería. Brindamos la
+                    ayuda de poder tener acceso al lavado de tu ropa de manera automática y eficiente. Además, ofrecemos
+                    un espacio para los interesados en brindar su servicio de lavado.</p>
+
                 <div class="service-list">
                     <div class="service-item">
                         <h3>Plataforma de Reserva y Seguimiento en Tiempo Real</h3>
-                        <p>Nuestra plataforma facilita la reserva de servicios de lavandería y te permite hacer un seguimiento en tiempo real del estado de tu pedido, desde la recogida hasta la entrega. Recibe notificaciones y actualizaciones para estar siempre informado.</p>
+                        <p>Nuestra plataforma facilita la reserva de servicios de lavandería y te permite hacer un
+                            seguimiento en tiempo real del estado de tu pedido, desde la recogida hasta la entrega.
+                            Recibe notificaciones y actualizaciones para estar siempre informado.</p>
                     </div>
                     <div class="service-item">
                         <h3>Evaluaciones y Recomendaciones de Proveedores</h3>
-                        <p>Accede a reseñas y calificaciones de otros usuarios sobre los proveedores de lavandería, asegurándote de elegir un servicio de calidad. También ofrecemos recomendaciones basadas en tus preferencias y experiencias previas.</p>
+                        <p>Accede a reseñas y calificaciones de otros usuarios sobre los proveedores de lavandería,
+                            asegurándote de elegir un servicio de calidad. También ofrecemos recomendaciones basadas en
+                            tus preferencias y experiencias previas.</p>
                     </div>
 
                     <div class="service-item">
                         <h3>Conexión Personalizada con Proveedores</h3>
-                        <p>Ofrecemos un sistema que te permite conectar con proveedores de lavandería que se ajusten a tus necesidades específicas, ya sea por tipo de ropa, ubicación o rapidez del servicio. Nuestro algoritmo de emparejamiento asegura que encuentres el servicio ideal para ti.</p>
+                        <p>Ofrecemos un sistema que te permite conectar con proveedores de lavandería que se ajusten a
+                            tus necesidades específicas, ya sea por tipo de ropa, ubicación o rapidez del servicio.
+                            Nuestro algoritmo de emparejamiento asegura que encuentres el servicio ideal para ti.</p>
                     </div>
                     <div class="service-item">
                         <h3>Ofertas y Promociones Exclusivas</h3>
-                        <p>Aprovecha descuentos y promociones especiales de nuestros proveedores asociados. Al registrarte en nuestra plataforma, podrás acceder a ofertas exclusivas que te ayudarán a ahorrar en tus servicios de lavandería.</p>
+                        <p>Aprovecha descuentos y promociones especiales de nuestros proveedores asociados. Al
+                            registrarte en nuestra plataforma, podrás acceder a ofertas exclusivas que te ayudarán a
+                            ahorrar en tus servicios de lavandería.</p>
                     </div>
                     <div class="service-item">
                         <h3>Panel de Control para Proveedores</h3>
-                        <p>Ofrecemos a los proveedores de lavandería un panel de control intuitivo donde pueden gestionar sus pedidos, actualizar sus servicios y precios, y comunicarse directamente con los clientes. Esto mejora la eficiencia y la transparencia en el proceso de lavado.</p>
+                        <p>Ofrecemos a los proveedores de lavandería un panel de control intuitivo donde pueden
+                            gestionar sus pedidos, actualizar sus servicios y precios, y comunicarse directamente con
+                            los clientes. Esto mejora la eficiencia y la transparencia en el proceso de lavado.</p>
                     </div>
                     <div class="service-item">
                         <h3>Soporte al Cliente 24/7</h3>
-                        <p>Facilitamos pagos seguros y diversos métodos de pago a través de nuestra plataforma. Los clientes pueden pagar con tarjeta de crédito, débito, transferencias bancarias o billeteras digitales, asegurando transacciones rápidas y seguras.</p>
+                        <p>Facilitamos pagos seguros y diversos métodos de pago a través de nuestra plataforma. Los
+                            clientes pueden pagar con tarjeta de crédito, débito, transferencias bancarias o billeteras
+                            digitales, asegurando transacciones rápidas y seguras.</p>
                     </div>
                 </div>
-        
+
                 <div class="offer-service">
                     <h3>¡Crea tu propio negocio!</h3>
-                    <p>Si tienes un lavarropas y quieres ofrecer tus servicios de lavandería, esta es tu oportunidad. Únete a nuestra red de lavaderos y empieza a ganar dinero brindando un servicio esencial a tu comunidad.</p>
+                    <p>Si tienes un lavarropas y quieres ofrecer tus servicios de lavandería, esta es tu oportunidad.
+                        Únete a nuestra red de lavaderos y empieza a ganar dinero brindando un servicio esencial a tu
+                        comunidad.</p>
                     <a href="#registrarproveedor" class="nav-link">Regístrate como proveedor</a>
                 </div>
             </div>
         </section>
-
         <section id="contacto" class="hidden">
             <form id="contact-form" class="container mt-5 shadow">
                 <div>
@@ -170,7 +225,7 @@
                             <h2>Contactate con nosotros</h2>
                             <p>Si tenés una consulta o reclamo, <br>
                                 completa este formulario.<br>
-                             Te responderemos lo antes posible.</p>
+                                Te responderemos lo antes posible.</p>
 
                             <div class="d-flex mt-2">
                                 <i class="bi bi-telephone-forward"></i>
@@ -200,13 +255,15 @@
                             <h2>Contacto</h2>
                             <div class="d-flex mt-3 mb-4">
                                 <div class="form-check form-check-inline me-3">
-                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="cliente" value="cliente" checked>
+                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="1"
+                                        value="cliente1" checked>
                                     <label class="form-check-label" for="cliente">
                                         Soy cliente
                                     </label>
                                 </div>
                                 <div class="form-check form-check-inline me-3">
-                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="cliente" value="cliente" checked>
+                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="cliente2"
+                                        value="cliente" checked>
                                     <label class="form-check-label" for="cliente">
                                         Soy proveedor
                                     </label>
@@ -245,8 +302,8 @@
 
                                 </div>
                                 <div class="mb-3">
-                                <label for="mensaje" class="form-label">Mensaje</label>
-                                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="3"></textarea>
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-12">
@@ -257,14 +314,15 @@
                         </div>
                     </div>
                 </div>
-            </form>    
+            </form>
         </section>
-        
+
         <section id="registrarproveedor" class="hidden">
-            <div class="row" >
-                <div class="col-xl-6 col-lg-6 col-md-5 register-col-content overlay-img-register" >
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-5 register-col-content overlay-img-register">
                     <h1 class="mb-5 mt-5">Registre su tienda en WeWash!</h1>
-                    <p class="description">Sumándose a la plataforma podrán <b>atraer nuevos clientes y generar ingresos extras.</b></p>
+                    <p class="description">Sumándose a la plataforma podrán <b>atraer nuevos clientes y generar ingresos
+                            extras.</b></p>
                     <h2 class="text-center m-5">
                         Ser parte de WeWash no tiene costo ni adhesión ni de mantenimiento.
                         <br>
@@ -302,31 +360,31 @@
                                 <label>Teléfono</label>
                             </div>
                             <div class="mb-5 group material-input">
-                             <label>*Cod. País + Teléfono. Ej: +54 11 35884577</label>
+                                <label>*Cod. País + Teléfono. Ej: +54 11 35884577</label>
                             </div>
                             <br>
                             <div class="row">
                                 <br>
-                            <div class="col text-left">
-                                <div class="styled-checkbox">
-                                    <input id="agree"  name="terms_and_conditions" type="checkbox" value="1">
-                                    <label for="agree" style="font-size: small ; ">
-                                        
-                                        Acepto los
-                                        <a target="_blank" href="" style="color:#3863d2;">Términos y condiciones</a>
-                                        y la 
-                                        <a  target="_blank" href="" style="color: #3863d2;">Política de Privacidad.</a>
-                                        
-                                    </label>
+                                <div class="col text-left">
+                                    <div class="styled-checkbox">
+                                        <input id="agree" name="terms_and_conditions" type="checkbox" value="1">
+                                        <label for="agree" style="font-size: small ; ">
+                                            Acepto los
+                                            <a target="_blank" href="" style="color:#3863d2;">Términos y condiciones</a>
+                                            y la
+                                            <a target="_blank" href="" style="color: #3863d2;">Política de
+                                                Privacidad.</a>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="sign-btn text-center">
+                                <input class="btn2 btn2-lg btn2-gradient-01" style="font-weight: 600!important;"
+                                    type="submit" value="Crear cuenta">
                             </div>
-                            
-                         <div class="sign-btn text-center">
-                            <input class="btn2 btn2-lg btn2-gradient-01" style="font-weight: 600!important;" type="submit" value="Crear cuenta">
-                        </div>   
                         </form>
-                        
+
                         <div class="register text-center" style="font-size:small;">
                             Ya tienes una cuenta?
                             <br>
@@ -336,10 +394,8 @@
                 </div>
             </div>
         </section>
-
         <section id="registrarse" class="hidden">
             <div class="form-container">
-                
                 <form id="register-form">
                     <h2>Registrarse</h2>
                     <div class="col-md-12">
@@ -378,8 +434,8 @@
         </section>
 
         <section id="contratarservicio" class="hidden">
-            <div class="form-container">                
-                <form id="register-form">
+            <div class="form-container">
+                <form id="register-form2">
                     <h2>Contratar el servicio</h2>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">Dirección</label>
@@ -387,7 +443,8 @@
                     </div>
                     <div class="col-12">
                         <label for="telefono" class="form-label">Teléfono</label>
-                        <input type="text" class="form-control" id="telefono" placeholder="*Código de área + Teléfono*" required>
+                        <input type="text" class="form-control" id="telefono" placeholder="*Código de área + Teléfono*"
+                            required>
                     </div>
                     <div class="col-md-12">
                         <label for="inputCity" class="form-label">Ciudad</label>
@@ -407,33 +464,36 @@
                         <label for="inputZip" class="form-label">CP</label>
                         <input type="text" class="form-control" id="inputZip" required>
                     </div>
-                    
+
                     <!-- SERVICIOS Y HORARIOS -->
                     <fieldset class="row mb-3">
                         <legend class="col-form-label col-sm-2 pt-0">Servicios</legend>
                         <div class="col-sm-10 offset-sm-2 pt-0">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Lavado" checked required>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                    value="Lavado" checked required>
                                 <label class="form-check-label" for="gridRadios1">
                                     Lavado
                                 </label>
-                               
+
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Secado" required>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                    value="Secado" required>
                                 <label class="form-check-label" for="gridRadios2">
                                     Secado
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Lavado y Secado" required>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                    value="Lavado y Secado" required>
                                 <label class="form-check-label" for="gridRadios3">
                                     Lavado y Secado
                                 </label>
                             </div>
                         </div>
                     </fieldset>
-                    
+
                     <div class="row mb-3">
                         <legend class="col-form-label col-sm-2 pt-0">Turnos</legend>
                         <div class="col-sm-10 offset-sm-2">
@@ -457,7 +517,7 @@
                             </div>
                         </div>
                     </div>
-                     <!-- ACLARACIONES Y PAGO -->
+                    <!-- ACLARACIONES Y PAGO -->
                     <div class="col-12">
                         <label for="pago" class="form-label">Forma de Pago</label>
                         <select id="inputPago" class="form-select" required>
@@ -471,7 +531,7 @@
                     <div class="col-12">
                         <label for="aclaraciones" class="form-label">Aclaraciones </label>
                         <input type="text" class="form-control" id="aclaraciones">
-                    </div> 
+                    </div>
 
                     <div class="col-12">
                         <div class="form-check">
@@ -481,11 +541,147 @@
                             </label>
                         </div>
                     </div>
-        
+
                     <div class="col-12 button-container">
                         <button type="submit" class="btn btn-primary">Aceptar</button>
                         <a href="../index.html" class="btn btn-secondary">Cancelar</a>
                     </div>
+                </form>
+            </div>
+        </section>
+        <!--<section id="usuarios" class="hidden">
+            <div class="form-container">
+                <h2>Listado de Usuarios</h2>
+                <div id="usuariosContainer">
+                </div>
+                <button id="btnActualizar">Actualizar Lista</button>
+              </div>
+        </section>-->
+        <section id="usuarios" class="hidden">
+            <div class="form-container">
+                <form id="listarUsuariosForm">
+                    <h2>Listado de Usuarios</h2>
+                    <div class="button-container">
+                        <button id="btnAgregar" class="btn btn-primary">Agregar Usuario</button>
+                    </div>
+                    <table id="usuariosTable">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Nombre de Usuario</th>
+                                <th>Email</th>
+                                <th>Teléfono</th>
+                                <th>Dirección</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usuariosContainer">
+                            <!--Los usuarios se mostrarán aquí-->
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </section>
+        <section id="eliminarusuario" class="hidden">
+            <div class="form-container">
+                <h2>Eliminar Usuario</h2>
+                <form id="eliminarUsuarioForm">
+                    <label for="id">ID del Usuario a Eliminar:</label>
+                    <input type="text" id="id1" name="id" required>
+                    <button type="submit">Eliminar Usuario</button>
+                </form>
+                <div id="mensaje"></div>
+            </div>
+        </section>
+        <section id="actualizarusuario" class="hidden">
+            <div class="form-container">
+                <form id="actualizarUsuarioForm">
+                    <h2>Actualizar Usuario</h2>
+                    <div class="col-12">
+                        <label for="id">Código de usuario:</label>
+                        <input type="text" id="idUsuarioAEditar" name="idUsuarioAEditar" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="nombre" class="form-label">Nuevo nombre:</label>
+                        <input type="text" class="form-control" id="nombre1" name="nombre1" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="apellido" class="form-label">Nuevo apellido</label>
+                        <input type="text" class="form-control" id="apellido1" name="apellido1" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="nombreDeUsuario" class="form-label">Nuevo nombre de usuario</label>
+                        <input type="text" class="form-control" id="nombreDeUsuario1" name="nombreDeUsuario1" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="telefono" class="form-label">Nuevo teléfono:</label>
+                        <input type="text" class="form-control" id="telefono1" name="telefono1">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="direccion" class="form-label">Nueva dirección:</label>
+                        <input type="text" class="form-control" id="direccion1" name="direccion1">
+                    </div>
+
+                    <div class="col-12 button-container">
+                        <button type="submit" class="btn btn-primary">Actualizar Usuario</button>
+                        <a href="../index.html" class="btn btn-secondary">Cancelar</a>
+                    </div>
+                    <div id="mensajeactualizacion"></div>
+                </form>
+            </div>
+        </section>
+
+        <section id="crearusuario" class="hidden">
+            <div class="form-container">
+                <form id="crearUsuarioForm">
+                    <h2>Crear Usuario</h2>
+                    <div class="col-md-12">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre2" name="nombre2" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido2" name="apellido2" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="nombreDeUsuario" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="nombreDeUsuario" name="nombreDeUsuario" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email2" name="email2" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password2" name="password2" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputrepetirpassword" class="form-label">Repetir contraseña</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="inputrepetirpassword" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="mostrarPassword">
+                                    <span id="mostrarPasswordIcon">Mostrar</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="text" class="form-control" id="telefono2" name="telefono2">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="direccion" class="form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="direccion2" name="direccion2">
+                    </div>
+                    <div class="col-12 button-container">
+                        <button id="btnAgregarUsuario" type="submit" class="btn btn-primary">Crear</button>
+                        <a href="../index.html" class="btn btn-secondary">Cancelar</a>
+                    </div>
+                    <div id="mensajecreacion"></div>
                 </form>
             </div>
         </section>
@@ -499,9 +695,11 @@
     </footer>
 
     <script src="./Frontend/assets/js/script.js"></script>
+    <script src="./Frontend/assets/js/usuarios.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
 </body>
+
 </html>
