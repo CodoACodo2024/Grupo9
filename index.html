@@ -27,21 +27,81 @@
                 <a href="#home" class="nav-link invisible">WeWash</a>
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
+                    <!--<li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
                     <li><a href="#services" class="nav-link">Servicios</a></li>
                     <li><a href="#contratarservicio" class="nav-link">Contratar servicio</a></li>
                     <li><a href="#registrarproveedor" class="nav-link">Registrar proveedor</a></li>
                     <li><a href="#registrarse" class="nav-link">Registrarse</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>-->
+                    <li><a href="#usuarios" class="nav-link">Usuarios</a></li>
+                    <li><a href="#crearusuario" class="nav-link">Crear usuario</a></li>
+                    <li><a href="#actualizarusuario" class="nav-link">Editar usuario</a></li>
+                    <li><a href="#eliminarusuario" class="nav-link">Eliminar usuario</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
     <main>
+        <section id="usuarios">
+            <div class="container">
+                <h1>Listado de Usuarios</h1>
+                <div id="usuariosContainer">
+                </div>
+                <button id="btnActualizar">Actualizar Lista</button>
+              </div>
+        </section>
+        <section id="eliminarusuario">
+            <div class="container">
+                <h1>Eliminar Usuario</h1>
+                <form id="eliminarUsuarioForm">
+                  <label for="id">ID del Usuario a Eliminar:</label>
+                  <input type="text" id="id1" name="id" required>
+                  <button type="submit">Eliminar Usuario</button>
+                </form>
+                <div id="mensaje"></div>
+              </div>
+        </section>
+        <section id="actualizarusuario">
+            <div class="container">
+                <h1>Actualizar Usuario</h1>
+                <form id="actualizarUsuarioForm">
+                  <label for="id">ID del Usuario:</label>
+                  <input type="text" id="idUsuarioAEditar" name="idUsuarioAEditar" required>
+                  <label for="nombre">Nuevo Nombre:</label>
+                  <input type="text" id="nombre1" name="nombre1">
+                  <label for="email">Nuevo Email:</label>
+                  <input type="email" id="email1" name="email1">
+                  <label for="telefono">Nuevo Teléfono:</label>
+                  <input type="text" id="telefono1" name="telefono1">
+                  <label for="direccion">Nueva Dirección:</label>
+                  <input type="text" id="direccion1" name="direccion1">
+                  <button type="submit">Actualizar Usuario</button>
+                </form>
+                <div id="mensajeactualizacion"></div>
+              </div>
+        </section>
+        <section id="crearusuario">
+                <div class="container">
+                    <h1>Crear Usuario</h1>
+                    <form id="crearUsuarioForm">
+                      <label for="nombre">Nombre:</label>
+                      <input type="text" id="nombre2" name="nombre2" required>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email2" name="email2" required>
+                      <label for="password">Password:</label>
+                      <input type="password" id="password2" name="password2" required>
+                      <label for="telefono">Teléfono:</label>
+                      <input type="text" id="telefono2" name="telefono2">
+                      <label for="direccion">Dirección:</label>
+                      <input type="text" id="direccion2" name="direccion2">
+                      <button type="submit">Crear</button>
+                    </form>
+                    <div id="mensajecreacion"></div>
+            </div>
+        </section>
         <section id="home">
             <div class="container">
-                <div id="welcomeCarousel" class="carousel slide" data-ride="carousel">
+                <!--<div id="welcomeCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#welcomeCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#welcomeCarousel" data-slide-to="1"></li>
@@ -77,7 +137,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>
+                </div>-->
             </div>
         </section>
 
@@ -200,13 +260,13 @@
                             <h2>Contacto</h2>
                             <div class="d-flex mt-3 mb-4">
                                 <div class="form-check form-check-inline me-3">
-                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="cliente" value="cliente" checked>
+                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="1" value="cliente1" checked>
                                     <label class="form-check-label" for="cliente">
                                         Soy cliente
                                     </label>
                                 </div>
                                 <div class="form-check form-check-inline me-3">
-                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="cliente" value="cliente" checked>
+                                    <input class="form-check-input" type="radio" name="tipoUsuario" id="cliente2" value="cliente" checked>
                                     <label class="form-check-label" for="cliente">
                                         Soy proveedor
                                     </label>
@@ -379,7 +439,7 @@
 
         <section id="contratarservicio" class="hidden">
             <div class="form-container">                
-                <form id="register-form">
+                <form id="register-form2">
                     <h2>Contratar el servicio</h2>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">Dirección</label>
@@ -499,6 +559,7 @@
     </footer>
 
     <script src="./Frontend/assets/js/script.js"></script>
+    <script src="./Frontend/assets/js/usuarios.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
