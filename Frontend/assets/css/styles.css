@@ -493,6 +493,36 @@ form button {
     background-color: #0056b3;
 }
 
+#usuariosTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #usuariosTable th, #usuariosTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #usuariosTable th {
+    background-color: #01d28e;
+    color: white;
+  }
+  
+  #usuariosTable td button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #usuariosTable td button:hover {
+    background-color: #0056b3;
+  }
+  
 @media (max-width: 768px) {
     .navbar .container {
         flex-direction: column;
