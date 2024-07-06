@@ -73,6 +73,32 @@ body {
     font-weight: bold;
 }
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu .nav-link {
+    padding: 10px 15px;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .invisible {
     visibility: hidden; 
 }
@@ -467,6 +493,36 @@ form button {
     background-color: #0056b3;
 }
 
+#usuariosTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #usuariosTable th, #usuariosTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #usuariosTable th {
+    background-color: #01d28e;
+    color: white;
+  }
+  
+  #usuariosTable td button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #usuariosTable td button:hover {
+    background-color: #0056b3;
+  }
+  
 @media (max-width: 768px) {
     .navbar .container {
         flex-direction: column;
