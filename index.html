@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <!--<nav class="navbar">
             <div class="container">
                 <div class="container">
                     <div class="navbar-brand">
@@ -27,81 +27,54 @@
                 <a href="#home" class="nav-link invisible">WeWash</a>
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-link">Home</a></li>
-                    <!--<li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
                     <li><a href="#services" class="nav-link">Servicios</a></li>
                     <li><a href="#contratarservicio" class="nav-link">Contratar servicio</a></li>
                     <li><a href="#registrarproveedor" class="nav-link">Registrar proveedor</a></li>
                     <li><a href="#registrarse" class="nav-link">Registrarse</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>-->
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
                     <li><a href="#usuarios" class="nav-link">Usuarios</a></li>
                     <li><a href="#crearusuario" class="nav-link">Crear usuario</a></li>
                     <li><a href="#actualizarusuario" class="nav-link">Editar usuario</a></li>
                     <li><a href="#eliminarusuario" class="nav-link">Eliminar usuario</a></li>
                 </ul>
             </div>
+        </nav>-->
+
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="#home" class="navbar-brand">
+                        <img src="./Frontend/assets/img/logo.png" alt="WeWash Logo" class="logo">
+                        <span class="brand-name animated-title">WeWash</span>
+                    </a>
+                   
+                </div>
+                <a href="#home" class="nav-link invisible">WeWash</a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="#registrarse" class="nav-link">Registrarse</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">BackEnd</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#usuarios" class="nav-link">Usuarios</a></li>
+                            <li><a href="#crearusuario" class="nav-link">Crear usuario</a></li>
+                            <li><a href="#actualizarusuario" class="nav-link">Editar usuario</a></li>
+                            <li><a href="#eliminarusuario" class="nav-link">Eliminar usuario</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        
     </header>
     <main>
-        <section id="usuarios">
-            <div class="container">
-                <h1>Listado de Usuarios</h1>
-                <div id="usuariosContainer">
-                </div>
-                <button id="btnActualizar">Actualizar Lista</button>
-              </div>
-        </section>
-        <section id="eliminarusuario">
-            <div class="container">
-                <h1>Eliminar Usuario</h1>
-                <form id="eliminarUsuarioForm">
-                  <label for="id">ID del Usuario a Eliminar:</label>
-                  <input type="text" id="id1" name="id" required>
-                  <button type="submit">Eliminar Usuario</button>
-                </form>
-                <div id="mensaje"></div>
-              </div>
-        </section>
-        <section id="actualizarusuario">
-            <div class="container">
-                <h1>Actualizar Usuario</h1>
-                <form id="actualizarUsuarioForm">
-                  <label for="id">ID del Usuario:</label>
-                  <input type="text" id="idUsuarioAEditar" name="idUsuarioAEditar" required>
-                  <label for="nombre">Nuevo Nombre:</label>
-                  <input type="text" id="nombre1" name="nombre1">
-                  <label for="email">Nuevo Email:</label>
-                  <input type="email" id="email1" name="email1">
-                  <label for="telefono">Nuevo Teléfono:</label>
-                  <input type="text" id="telefono1" name="telefono1">
-                  <label for="direccion">Nueva Dirección:</label>
-                  <input type="text" id="direccion1" name="direccion1">
-                  <button type="submit">Actualizar Usuario</button>
-                </form>
-                <div id="mensajeactualizacion"></div>
-              </div>
-        </section>
-        <section id="crearusuario">
-                <div class="container">
-                    <h1>Crear Usuario</h1>
-                    <form id="crearUsuarioForm">
-                      <label for="nombre">Nombre:</label>
-                      <input type="text" id="nombre2" name="nombre2" required>
-                      <label for="email">Email:</label>
-                      <input type="email" id="email2" name="email2" required>
-                      <label for="password">Password:</label>
-                      <input type="password" id="password2" name="password2" required>
-                      <label for="telefono">Teléfono:</label>
-                      <input type="text" id="telefono2" name="telefono2">
-                      <label for="direccion">Dirección:</label>
-                      <input type="text" id="direccion2" name="direccion2">
-                      <button type="submit">Crear</button>
-                    </form>
-                    <div id="mensajecreacion"></div>
-            </div>
-        </section>
         <section id="home">
             <div class="container">
-                <!--<div id="welcomeCarousel" class="carousel slide" data-ride="carousel">
+                <div id="welcomeCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#welcomeCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#welcomeCarousel" data-slide-to="1"></li>
@@ -137,7 +110,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>-->
+                </div>
             </div>
         </section>
 
@@ -396,10 +369,8 @@
                 </div>
             </div>
         </section>
-
         <section id="registrarse" class="hidden">
             <div class="form-container">
-                
                 <form id="register-form">
                     <h2>Registrarse</h2>
                     <div class="col-md-12">
@@ -547,6 +518,88 @@
                         <a href="../index.html" class="btn btn-secondary">Cancelar</a>
                     </div>
                 </form>
+            </div>
+        </section>
+        <section id="usuarios" class="hidden">
+            <div class="form-container">
+                <h2>Listado de Usuarios</h2>
+                <div id="usuariosContainer">
+                </div>
+                <button id="btnActualizar">Actualizar Lista</button>
+              </div>
+        </section>
+        <section id="eliminarusuario" class="hidden">
+            <div class="form-container">
+                <h2>Eliminar Usuario</h2>
+                <form id="eliminarUsuarioForm">
+                  <label for="id">ID del Usuario a Eliminar:</label>
+                  <input type="text" id="id1" name="id" required>
+                  <button type="submit">Eliminar Usuario</button>
+                </form>
+                <div id="mensaje"></div>
+              </div>
+        </section>
+        <section id="actualizarusuario" class="hidden"> 
+            <div class="form-container">
+                <h2>Actualizar Usuario</h2>
+                <form id="actualizarUsuarioForm">
+                    <div class="col-12">
+                        <label for="id">ID del Usuario:</label>
+                        <input type="text" id="idUsuarioAEditar" name="idUsuarioAEditar" required>
+                    </div>     
+                    <div class="col-12">
+                        <label for="nombre">Nuevo Nombre:</label>
+                        <input type="text" id="nombre1" name="nombre1">
+                    </div>
+                    <div class="col-12">
+                        <label for="email">Nuevo Email:</label>
+                        <input type="email" id="email1" name="email1">
+                    </div>
+                    <div class="col-12">
+                        <label for="telefono">Nuevo Teléfono:</label>
+                        <input type="text" id="telefono1" name="telefono1">
+                    </div>
+                    <div class="col-12">
+                        <label for="direccion">Nueva Dirección:</label>
+                        <input type="text" id="direccion1" name="direccion1">
+                    </div>                 
+                    <div class="col-12 button-container">
+                        <button type="submit">Actualizar Usuario</button>
+                    </div>           
+                </form>
+                <div id="mensajeactualizacion"></div>
+              </div>
+        </section>
+        <section id="crearusuario" class="hidden">
+            <div class="form-container">               
+                <form id="crearUsuarioForm">
+                    <h2>Crear Usuario</h2>
+                    <div class="col-md-12">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre2" name="nombre2" required>
+                    </div>  
+                    <div class="col-md-12">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email2" name="email2" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password2" name="password2" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="text" class="form-control" id="telefono2" name="telefono2">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="direccion" class="form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="direccion2" name="direccion2">
+                    </div>
+                    <div class="col-12 button-container">
+                        <button type="submit" class="btn btn-primary">Crear</button>
+                        <a href="../index.html" class="btn btn-secondary">Cancelar</a>
+                    </div>
+                    <div id="mensajecreacion"></div>
+                </form>         
             </div>
         </section>
     </main>

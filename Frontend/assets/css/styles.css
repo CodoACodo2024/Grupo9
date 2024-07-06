@@ -73,6 +73,32 @@ body {
     font-weight: bold;
 }
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu .nav-link {
+    padding: 10px 15px;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .invisible {
     visibility: hidden; 
 }
