@@ -432,7 +432,6 @@
                 </form>
             </div>
         </section>
-
         <section id="contratarservicio" class="hidden">
             <div class="form-container">
                 <form id="register-form2">
@@ -549,14 +548,6 @@
                 </form>
             </div>
         </section>
-        <!--<section id="usuarios" class="hidden">
-            <div class="form-container">
-                <h2>Listado de Usuarios</h2>
-                <div id="usuariosContainer">
-                </div>
-                <button id="btnActualizar">Actualizar Lista</button>
-              </div>
-        </section>-->
         <section id="usuarios" class="hidden">
             <div class="form-container">
                 <form id="listarUsuariosForm">
@@ -577,19 +568,25 @@
                             </tr>
                         </thead>
                         <tbody id="usuariosContainer">
-                            <!--Los usuarios se mostrarán aquí-->
+                            <!-- Más filas de ejemplo -->
                         </tbody>
                     </table>
                 </form>
             </div>
         </section>
         <section id="eliminarusuario" class="hidden">
-            <div class="form-container">
-                <h2>Eliminar Usuario</h2>
+            <div class="form-container">       
                 <form id="eliminarUsuarioForm">
-                    <label for="id">ID del Usuario a Eliminar:</label>
-                    <input type="text" id="id1" name="id" required>
-                    <button type="submit">Eliminar Usuario</button>
+                    <h2>Eliminar Usuario</h2>
+                    <div class="col-12">
+                        <label for="id" class="form-label">Usuario a eliminar:</label>
+                        <input type="text" class="form-control" id="id1" name="id" required>
+                    </div>                    
+                    <div class="col-12 button-container">
+                        <button type="submit" class="btn btn-primary">Eliminar Usuario</button>
+                        <a href="../index.html" class="btn btn-secondary">Cancelar</a>
+                    </div>
+                    <div id="mensajeelimincacion"></div>
                 </form>
                 <div id="mensaje"></div>
             </div>
@@ -606,7 +603,6 @@
                         <label for="nombre" class="form-label">Nuevo nombre:</label>
                         <input type="text" class="form-control" id="nombre1" name="nombre1" required>
                     </div>
-
                     <div class="col-md-12">
                         <label for="apellido" class="form-label">Nuevo apellido</label>
                         <input type="text" class="form-control" id="apellido1" name="apellido1" required>
@@ -615,7 +611,6 @@
                         <label for="nombreDeUsuario" class="form-label">Nuevo nombre de usuario</label>
                         <input type="text" class="form-control" id="nombreDeUsuario1" name="nombreDeUsuario1" required>
                     </div>
-
                     <div class="col-md-12">
                         <label for="telefono" class="form-label">Nuevo teléfono:</label>
                         <input type="text" class="form-control" id="telefono1" name="telefono1">
@@ -624,7 +619,6 @@
                         <label for="direccion" class="form-label">Nueva dirección:</label>
                         <input type="text" class="form-control" id="direccion1" name="direccion1">
                     </div>
-
                     <div class="col-12 button-container">
                         <button type="submit" class="btn btn-primary">Actualizar Usuario</button>
                         <a href="../index.html" class="btn btn-secondary">Cancelar</a>
@@ -633,7 +627,6 @@
                 </form>
             </div>
         </section>
-
         <section id="crearusuario" class="hidden">
             <div class="form-container">
                 <form id="crearUsuarioForm">
@@ -686,14 +679,20 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="container">
             <p>&copy; 2024 Grupo 9 - WeWash. </p>
             <p>Todos los derechos reservados.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="./Frontend/assets/js/script.js"></script>
     <script src="./Frontend/assets/js/usuarios.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

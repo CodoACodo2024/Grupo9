@@ -216,8 +216,11 @@ form button {
     background: #01d28e !important;
     border-color: #01d28e !important;
     color: #fff;
-    width: 100px;
+    width: auto;
     border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .btn.btn-primary:hover{
@@ -523,6 +526,38 @@ form button {
     background-color: #0056b3;
   }
   
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons li a {
+    display: block;
+    padding: 10px;
+    color: #000; /* Color de los íconos */
+    transition: all 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #007bff; /* Color al pasar el ratón sobre los íconos */
+}
+
+
+
 @media (max-width: 768px) {
     .navbar .container {
         flex-direction: column;
