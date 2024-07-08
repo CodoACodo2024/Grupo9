@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
   } else {
     console.error('El botón de agregar no se encontró en el DOM.');
   }
-
+ 
+  
   function agregarUsuario() {
     const crearUsuarioForm = document.getElementById('crearUsuarioForm');
     console.log('crearUsuarioForm:', crearUsuarioForm); // Verificar si crearUsuarioForm existe
@@ -278,6 +279,6 @@ document.addEventListener('DOMContentLoaded', function() {
   } else {
     console.error('El formulario de actualización no se encontró en el DOM.');
   }
-
+ 
   listarUsuarios(); // Llamar a listarUsuarios() al cargar la página para mostrar los usuarios inicialmente
 });
