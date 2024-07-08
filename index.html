@@ -557,6 +557,7 @@
                     <table id="usuariosTable">
                         <thead>
                             <tr>
+                                <th>Código</th>
                                 <th>Nombre</th>
                                 <th>Apellido</th>
                                 <th>Nombre de Usuario</th>
@@ -583,11 +584,10 @@
                     </div>                    
                     <div class="col-12 button-container">
                         <button type="submit" class="btn btn-primary">Eliminar Usuario</button>
-                        <a href="../index.html" class="btn btn-secondary">Cancelar</a>
+                        <a href="#usuarios" class="nav-link custom-btn-secondary">Cancelar</a>    
                     </div>
-                    <div id="mensajeelimincacion"></div>
+                    <div id="mensajeeliminacion" class="alerta-centrada"></div>
                 </form>
-                <div id="mensaje"></div>
             </div>
         </section>
         <section id="actualizarusuario" class="hidden">
@@ -611,6 +611,10 @@
                         <input type="text" class="form-control" id="nombreDeUsuario1" name="nombreDeUsuario1" required>
                     </div>
                     <div class="col-md-12">
+                        <label for="email" class="form-label">Nuevo Email:</label>
+                        <input type="email" class="form-control" id="email1" name="email1" required>
+                    </div>
+                    <div class="col-md-12">
                         <label for="telefono" class="form-label">Nuevo teléfono:</label>
                         <input type="text" class="form-control" id="telefono1" name="telefono1">
                     </div>
@@ -620,9 +624,9 @@
                     </div>
                     <div class="col-12 button-container">
                         <button type="submit" class="btn btn-primary">Actualizar Usuario</button>
-                        <a href="../index.html" class="btn btn-secondary">Cancelar</a>
+                        <a href="#usuarios" class="nav-link custom-btn-secondary">Cancelar</a>    
                     </div>
-                    <div id="mensajeactualizacion"></div>
+                    <div id="mensajeactualizacion" class="alerta-centrada"></div>
                 </form>
             </div>
         </section>
@@ -670,10 +674,10 @@
                         <input type="text" class="form-control" id="direccion2" name="direccion2">
                     </div>
                     <div class="col-12 button-container">
-                        <button id="btnAgregarUsuario" type="submit" class="btn btn-primary">Crear</button>
-                        <a href="../index.html" class="btn btn-secondary">Cancelar</a>
+                        <button id="btnAgregarUsuario" type="submit" class="btn btn-primary">Crear</button> 
+                        <a href="#usuarios" class="nav-link custom-btn-secondary">Cancelar</a>    
                     </div>
-                    <div id="mensajecreacion"></div>
+                    <div id="mensajecreacion" class="alerta-centrada"></div>
                 </form>
             </div>
         </section>
