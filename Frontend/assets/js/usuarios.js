@@ -140,9 +140,25 @@ document.addEventListener('DOMContentLoaded', function () {
                         method: 'DELETE'
                     });
 
-                if (response.ok) {
-                    document.getElementById('mensaje').innerText = `Usuario con ID ${id} eliminado correctamente`;
-                    listarUsuarios();
+                    if (eliminarResponse.ok) {
+                        const mensajeEliminacion = document.getElementById('mensajeeliminacion');
+                        mensajeEliminacion.innerText = `Usuario con código ${id} eliminado con éxito`;
+                        mensajeEliminacion.classList.remove('alerta');
+                        mensajeEliminacion.classList.add('alerta-exito');
+
+                        listarUsuarios();
+                        eliminarUsuarioForm.reset();
+
+                        setTimeout(() => {
+                            mostrarFormulario("usuarios", null)
+                        }, 2000);
+                    } else {
+                        const error = await response.json();
+                        const mensajeEliminacion = document.getElementById('mensajeeliminacion');
+                        mensajeEliminacion.innerText = `Error: ${error.error}`;
+                        mensajeEliminacion.classList.remove('alerta-exito');
+                        mensajeEliminacion.classList.add('alerta');
+                    }
                 } else {
                     const mensajeEliminacion = document.getElementById('mensajeeliminacion');
                     mensajeEliminacion.innerText = `¡Atención!: El usuario con código ${id} no existe`;
@@ -197,16 +213,33 @@ document.addEventListener('DOMContentLoaded', function () {
                         body: JSON.stringify(data)
                     });
 
-                if (response.ok) {
-                    const usuarioActualizado = await response.json();
-                    document.getElementById('mensajeactualizacion').innerText = `Usuario actualizado: ${usuarioActualizado.nombre}`;
-                    listarUsuarios();
-                } else {
-                    const error = await response.json();
-                    document.getElementById('mensajeactualizacion').innerText = `Error: ${error.error}`;
+                    if (response.ok) {
+                        const usuarioActualizado = await response.json();
+                        const mensajeactualizacion = document.getElementById('mensajeactualizacion');
+                        mensajeactualizacion.innerText = `¡Usuario actualizado con éxito!`;
+                        mensajeactualizacion.classList.add('alerta-exito');
+                        mensajeactualizacion.classList.remove('alerta');
+
+                        listarUsuarios();
+                        actualizarUsuarioForm.reset();
+
+                        setTimeout(() => {
+                            mostrarFormulario("usuarios", null)
+                        }, 2000);
+                    } else {
+                        const error = await response.json();
+                        const mensajeactualizacion = document.getElementById('mensajeactualizacion');
+                        mensajeactualizacion.innerText = `Error: ${error.error}`;
+                        mensajeactualizacion.classList.remove('alerta-exito');
+                        mensajeactualizacion.classList.add('alerta');
+                    }
+                } catch (error) {
+
+                    const mensajeactualizacion = document.getElementById('mensajeactualizacion');
+                    mensajeactualizacion.innerText = `Error: ${error.error}`;
+                    mensajeactualizacion.classList.remove('alerta-exito');
+                    mensajeactualizacion.classList.add('alerta');
                 }
-            } catch (error) {
-                document.getElementById('mensajeactualizacion').innerText = `Error: ${error.message}`;
             }
         });
     } else {
@@ -248,6 +281,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     mensajecreacion.classList.remove('alerta');
 
                     listarUsuarios();
+                    crearUsuarioForm.reset();
+
+                    setTimeout(() => {
+                        mostrarFormulario("usuarios", null)
+                    }, 2000);
                 } else {
                     const error = await response.json();
                     mensajecreacion.innerText = `Error: ${error.error}`;
@@ -264,4 +302,3 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('El formulario de creación no se encontró en el DOM.');
     }
 });
-
