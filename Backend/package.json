@@ -4,7 +4,7 @@
   "description": "Repositorio para Codo a Codo - Equipo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "start": "node Backend/app.js"
   },
   "keywords": [],
   "author": "",
