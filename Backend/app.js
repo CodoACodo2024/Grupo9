@@ -5,19 +5,19 @@ const path = require('path');
 const routes = require('./routes');
 const cors = require('cors'); 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;  
 
-//CORS
+// CORS
 app.use(cors());
 
-//Parsear JSON
+// Parsear JSON
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//Archivos estáticos desde frontEnd
+// Archivos estáticos desde frontEnd
 app.use(express.static(path.join(__dirname, '../FrontEnd')));
 
-//Rutas
+// Rutas
 app.use('/', routes);
 
 app.listen(port, () => {
