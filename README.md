@@ -15,6 +15,7 @@ El proyecto está dividido en dos carpetas principales: `backend` y `frontend`.
 
 El backend de la aplicación está construido con Node.js, Express y Sequelize, y se conecta a una base de datos MySQL. La estructura de carpetas del backend es la siguiente:
 
+```
 Backend/
 │
 ├── config/
@@ -39,6 +40,7 @@ Backend/
 ├── app.js
 ├── package.json
 └── README.md
+```
 
 #### Dependencias
 
@@ -69,7 +71,7 @@ El archivo `package.json` en el backend incluye las siguientes dependencias:
 ### Frontend
 
 El frontend de la aplicación está construido con HTML, CSS, JavaScript, Bootstrap y jQuery. La estructura de carpetas del frontend es la siguiente:
-
+```
 frontend/
 │
 ├── assets/
@@ -85,6 +87,7 @@ frontend/
 ├── pages/
 │   ├── formulario.html
 │   └── index.html
+```
 
 #### Conexión entre Frontend y Backend
 
@@ -121,7 +124,7 @@ npm install
 3. Configura el archivo .env con las variables de entorno necesarias para la base de datos.
 
 4. Inicia el servidor del backend:
-5. 
+   
 ```
 npm start
 ```
