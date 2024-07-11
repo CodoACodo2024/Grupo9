@@ -2,24 +2,24 @@ require('dotenv').config();
 
 module.exports = {
     "development": {
-      "username": "368029",
-      "password": "*Olivia2025*",
-      "database": "melisaapaz_wewashdb",
-      "host": "mysql-melisaapaz.alwaysdata.net",
+      "username": process.env.DB_USER,
+      "password": process.env.DB_PASSWORD,
+      "database": process.env.DB_NAME,
+      "host": process.env.DB_HOST,
       "dialect": "mysql"
     },
     "test": {
-      "username": "368029",
-      "password": "*Olivia2025"*,
-      "database": "melisaapaz_wewashdb",
-      "host": "mysql-melisaapaz.alwaysdata.net",
+      "username": process.env.DB_USER,
+      "password": process.env.DB_PASSWORD,
+      "database": process.env.DB_NAME_TEST,
+      "host": process.env.DB_HOST,
       "dialect": "mysql"
     },
     "production": {
-      "username": "368029",
-      "password": "*Olivia2025*",
-      "database": "melisaapaz_wewashdb",
-      "host": "mysql-melisaapaz.alwaysdata.net",
+      "username": process.env.DB_USER,
+      "password": process.env.DB_PASSWORD,
+      "database": process.env.DB_NAME_PROD,
+      "host": process.env.DB_HOST,
       "dialect": "mysql"
     }
   };
