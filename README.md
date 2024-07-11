@@ -90,6 +90,7 @@ frontend/
 
 El archivo usuarios.js en el frontend maneja las solicitudes al backend. Aquí hay un ejemplo de cómo listar usuarios desde el frontend:
 
+```
 function listarUsuarios() {
     fetch('http://localhost:3000/usuarios')
         .then(response => response.json())
@@ -100,23 +101,30 @@ function listarUsuarios() {
             console.error('Error:', error);
         });
 }
+```
 
 #### Configuración del Proyecto
 
 1. Clona el repositorio:
 
+```
 git clone https://github.com/CodoACodo2024/Grupo9.git
+```
 
 2. Navega al directorio del backend e instala las dependencias:
 
+```
 cd Grupo9/Backend
 npm install
+```
 
 3. Configura el archivo .env con las variables de entorno necesarias para la base de datos.
 
 4. Inicia el servidor del backend:
-
+5. 
+```
 npm start
+```
 
 5. Abre index.html en el navegador para ver la interfaz de usuario.
 
