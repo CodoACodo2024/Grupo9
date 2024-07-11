@@ -1,7 +1,14 @@
 # Proyecto WeWash - Grupo 9
 
 ## Descripción
-Este proyecto es parte del programa Codo a Codo y ha sido desarrollado por el Grupo 9. WeWash es una aplicación web para gestionar lavanderías, permitiendo a los usuarios crear, leer, actualizar y eliminar (CRUD) registros de usuarios.
+Este proyecto es parte del programa Codo a Codo y ha sido desarrollado por el Grupo 9. 
+
+WeWash es una aplicación web diseñada para gestionar lavanderías, ofreciendo a los usuarios la comodidad de programar y gestionar servicios de lavado/planchado de ropa desde cualquier dispositivo.
+
+Además, permite a los proveedores de servicios de lavandería registrarse y ofrecer sus servicios a través de la plataforma.
+
+Como parte del proyecto BackEnd, se ha implementado la gestión de usuarios que incluye operaciones CRUD (Crear, Leer, Actualizar, Eliminar), integrado tanto en el FrontEnd como en el BackEnd del sistema.
+
 
 ## Integrantes
 - Apaz, Melisa
