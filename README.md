@@ -62,6 +62,7 @@ El archivo package.json en el backend incluye las siguientes dependencias:
   }
 }
 
+
 ## Frontend:
 El frontend de la aplicación está construido con HTML, CSS, JavaScript, Bootstrap y jQuery. La estructura de carpetas del frontend es la siguiente:
 
