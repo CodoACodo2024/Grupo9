@@ -1,47 +1,50 @@
-# Proyecto WeWash - Grupo 9:
+# Proyecto WeWash - Grupo 9
 
-## Descripción:
-Este proyecto es parte del programa Codo a Codo y ha sido desarrollado por el Grupo 9. WeWash es una aplicación web para gestionar lavanderíaS, permitiendo a los usuarios crear, leer, actualizar y eliminar (CRUD) registros de usuarios.
+## Descripción
+Este proyecto es parte del programa Codo a Codo y ha sido desarrollado por el Grupo 9. WeWash es una aplicación web para gestionar lavanderías, permitiendo a los usuarios crear, leer, actualizar y eliminar (CRUD) registros de usuarios.
 
-## Integrantes:
+## Integrantes
 - Apaz, Melisa
 - Baez, Jorgelina
-- 
-## Estructura del Proyecto:
-El proyecto está dividido en dos carpetas principales: backend y frontend.
+  
+## Estructura del Proyecto
 
-## Backend:
+El proyecto está dividido en dos carpetas principales: `backend` y `frontend`.
+
+### Backend
+
 El backend de la aplicación está construido con Node.js, Express y Sequelize, y se conecta a una base de datos MySQL. La estructura de carpetas del backend es la siguiente:
 
 Backend/
 │
 ├── config/
-│   ├── config.js
-│   └── database.js
+│ ├── config.js
+│ └── database.js
 │
 ├── controllers/
-│   ├── index.js
-│   └── usuarioController.js
+│ ├── index.js
+│ └── usuarioController.js
 │
 ├── migrations/
 │
 ├── models/
-│   ├── index.js
-│   └── usuario.js
+│ ├── index.js
+│ └── usuario.js
 │
 ├── routes/
-│   ├── index.js
-│   └── usuarioRoutes.js
+│ ├── index.js
+│ └── usuarioRoutes.js
 │
 ├── .env
 ├── app.js
 ├── package.json
 └── README.md
 
-## Dependencias
+#### Dependencias
 
-El archivo package.json en el backend incluye las siguientes dependencias:
+El archivo `package.json` en el backend incluye las siguientes dependencias:
 
+```json
 {
   "name": "grupo9",
   "version": "1.0.0",
@@ -62,45 +65,46 @@ El archivo package.json en el backend incluye las siguientes dependencias:
   }
 }
 
+### Frontend
 
-## Frontend:
 El frontend de la aplicación está construido con HTML, CSS, JavaScript, Bootstrap y jQuery. La estructura de carpetas del frontend es la siguiente:
 
-Frontend/
+frontend/
 │
 ├── assets/
-│   ├── css
-│     ├── styles.css  
-│   ├── fonts
-│   ├── icons
-│   ├── img
-│   ├── js
-│     ├── scripts.js  
-│     ├── usuarios.js  
+│   ├── css/
+│   │   └── styles.css  
+│   ├── fonts/
+│   ├── icons/
+│   ├── img/
+│   ├── js/
+│   │   ├── scripts.js  
+│   │   └── usuarios.js  
+│
 ├── pages/
 │   ├── formulario.html
-└── index.html
+│   └── index.html
 
-## Conexión entre Frontend y Backend:
+#### Conexión entre Frontend y Backend
 
-El archivo usuario.js en el frontend maneja las solicitudes al backend. Aquí hay un ejemplo de cómo listar usuarios desde el frontend:
+El archivo usuarios.js en el frontend maneja las solicitudes al backend. Aquí hay un ejemplo de cómo listar usuarios desde el frontend:
 
 function listarUsuarios() {
     fetch('http://localhost:3000/usuarios')
         .then(response => response.json())
         .then(data => {
-            //Mostrar los datos de usuarios
+            // Mostrar los datos de usuarios
         })
         .catch(error => {
             console.error('Error:', error);
         });
 }
 
-## Configuración del Proyecto:
+#### Configuración del Proyecto
 
 1. Clona el repositorio:
 
-git clone (https://github.com/CodoACodo2024/Grupo9.git)
+git clone https://github.com/CodoACodo2024/Grupo9.git
 
 2. Navega al directorio del backend e instala las dependencias:
 
@@ -110,18 +114,17 @@ npm install
 3. Configura el archivo .env con las variables de entorno necesarias para la base de datos.
 
 4. Inicia el servidor del backend:
-   
+
 npm start
 
 5. Abre index.html en el navegador para ver la interfaz de usuario.
 
-## Contribuciones
+#### Contribuciones
+
 Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
-Haz un fork del proyecto.
-Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
-Realiza tus cambios y haz commit (git commit -am 'Añade nueva funcionalidad').
-Haz push a la rama (git push origin feature/nueva-funcionalidad).
-Abre un Pull Request.
-
-
+1. Haz un fork del proyecto.
+2. Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
+3. Realiza tus cambios y haz commit (git commit -am 'Añade nueva funcionalidad').
+4. Haz push a la rama (git push origin feature/nueva-funcionalidad).
+5. Abre un Pull Request.
