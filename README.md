@@ -64,6 +64,7 @@ El archivo `package.json` en el backend incluye las siguientes dependencias:
     "sequelize": "^6.37.3"
   }
 }
+```
 
 ### Frontend
 
