@@ -1,7 +1,7 @@
 const { Usuario } = require('../models');
 
 const usuarioController = {
-  // Listar todos los usuarios
+  //Listar todos los usuarios
   async list(req, res) {
     try {
       const usuarios = await Usuario.findAll();
@@ -11,7 +11,7 @@ const usuarioController = {
     }
   },
 
-  // Crear un nuevo usuario
+  //Crear un nuevo usuario
   async create(req, res) {
     try {
       const usuario = await Usuario.create(req.body);
@@ -21,7 +21,7 @@ const usuarioController = {
     }
   },
 
-  // Obtener un usuario por su ID
+  //Obtener un usuario por su ID
   async getById(req, res) {
     const { id } = req.params;
     try {
@@ -36,7 +36,7 @@ const usuarioController = {
     }
   },
 
-  // Actualizar un usuario por su ID
+  //Actualizar un usuario por su ID
   async update(req, res) {
     const { id } = req.params;
     try {
@@ -54,7 +54,7 @@ const usuarioController = {
     }
   },
 
-  // Eliminar un usuario por su ID
+  //Eliminar un usuario por su ID
   async delete(req, res) {
     const { id } = req.params;
     try {

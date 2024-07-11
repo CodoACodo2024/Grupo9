@@ -1,7 +1,7 @@
 const usuarioController = require('./usuarioController');
-const lavanderiaController = require('./lavanderiaController');
-const reservaController = require('./reservaController');
-const resenaController = require('./resenaController');
+const lavanderiaController = require('./lavanderiacontroller');
+const reservaController = require('./reservacontroller');
+const resenaController = require('./resenacontroller');
 
 module.exports = {
   usuarioController,
