@@ -127,10 +127,26 @@ git clone https://github.com/CodoACodo2024/Grupo9.git
 cd Grupo9/Backend
 npm install
 ```
+3. Crea una base de datos llamada: wewashdb
 
-3. Configura el archivo .env con las variables de entorno necesarias para la base de datos.
+4. Realiza la migración de los modelos:
 
-4. Inicia el servidor del backend:
+```
+npx sequelize-cli db:migrate 
+```
+   
+5. Configura el archivo .env con las variables de entorno necesarias para la base de datos. Por ejemplo:
+
+```
+DB_USER=root
+DB_PASSWORD=root
+DB_NAME=wewashdb
+DB_NAME_TEST=wewashdb_test
+DB_NAME_PROD=root_production
+DB_HOST=127.0.0.1
+```
+
+7. Inicia el servidor del backend:
    
 ```
 npm start
