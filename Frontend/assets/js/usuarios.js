@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function mostrarFormulario(seccionId, userId = null) {
-        resetMensajes()
+        resetMensajes();
 
         const secciones = document.querySelectorAll('section');
         secciones.forEach(seccion => seccion.classList.add('hidden'));
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (eliminarUsuarioForm) {
         eliminarUsuarioForm.addEventListener('submit', async function (event) {
             event.preventDefault();
-            resetMensajes()
+            resetMensajes();
 
             const formData = new FormData(event.target);
             const id = formData.get('id');
@@ -150,26 +150,43 @@ document.addEventListener('DOMContentLoaded', function () {
                         eliminarUsuarioForm.reset();
 
                         setTimeout(() => {
-                            mostrarFormulario("usuarios", null)
+                            mensajeEliminacion.innerText = '';
+                            mensajeEliminacion.classList.remove('alerta-exito');
+                            mostrarFormulario('usuarios');
                         }, 2000);
                     } else {
-                        const error = await response.json();
+                        const error = await eliminarResponse.json();
                         const mensajeEliminacion = document.getElementById('mensajeeliminacion');
                         mensajeEliminacion.innerText = `Error: ${error.error}`;
                         mensajeEliminacion.classList.remove('alerta-exito');
                         mensajeEliminacion.classList.add('alerta');
+
+                        setTimeout(() => {
+                            mensajeEliminacion.innerText = '';
+                            mensajeEliminacion.classList.remove('alerta');
+                        }, 3000);
                     }
                 } else {
                     const mensajeEliminacion = document.getElementById('mensajeeliminacion');
                     mensajeEliminacion.innerText = `¡Atención!: El usuario con código ${id} no existe`;
                     mensajeEliminacion.classList.remove('alerta-exito');
                     mensajeEliminacion.classList.add('alerta');
+
+                    setTimeout(() => {
+                        mensajeEliminacion.innerText = '';
+                        mensajeEliminacion.classList.remove('alerta');
+                    }, 3000);
                 }
             } catch (error) {
                 const mensajeEliminacion = document.getElementById('mensajeeliminacion');
                 mensajeEliminacion.innerText = `Error: ${error.message}`;
                 mensajeEliminacion.classList.remove('alerta-exito');
                 mensajeEliminacion.classList.add('alerta');
+
+                setTimeout(() => {
+                    mensajeEliminacion.innerText = '';
+                    mensajeEliminacion.classList.remove('alerta');
+                }, 3000);
             }
         });
     } else {
@@ -202,6 +219,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 mensajeactualizacion.innerText = `¡Atención!: El usuario con código ${id} no existe`;
                 mensajeactualizacion.classList.remove('alerta-exito');
                 mensajeactualizacion.classList.add('alerta');
+
+                setTimeout(() => {
+                    mensajeactualizacion.innerText = '';
+                    mensajeactualizacion.classList.remove('alerta');
+                }, 3000);
             }
             else {
                 try {
@@ -224,7 +246,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         actualizarUsuarioForm.reset();
 
                         setTimeout(() => {
-                            mostrarFormulario("usuarios", null)
+                            mensajeactualizacion.innerText = '';
+                            mensajeactualizacion.classList.remove('alerta-exito');
+                            mostrarFormulario('usuarios');
                         }, 2000);
                     } else {
                         const error = await response.json();
@@ -232,13 +256,22 @@ document.addEventListener('DOMContentLoaded', function () {
                         mensajeactualizacion.innerText = `Error: ${error.error}`;
                         mensajeactualizacion.classList.remove('alerta-exito');
                         mensajeactualizacion.classList.add('alerta');
+
+                        setTimeout(() => {
+                            mensajeactualizacion.innerText = '';
+                            mensajeactualizacion.classList.remove('alerta');
+                        }, 3000);
                     }
                 } catch (error) {
-
                     const mensajeactualizacion = document.getElementById('mensajeactualizacion');
-                    mensajeactualizacion.innerText = `Error: ${error.error}`;
+                    mensajeactualizacion.innerText = `Error: ${error.message}`;
                     mensajeactualizacion.classList.remove('alerta-exito');
                     mensajeactualizacion.classList.add('alerta');
+
+                    setTimeout(() => {
+                        mensajeactualizacion.innerText = '';
+                        mensajeactualizacion.classList.remove('alerta');
+                    }, 3000);
                 }
             }
         });
@@ -284,18 +317,32 @@ document.addEventListener('DOMContentLoaded', function () {
                     crearUsuarioForm.reset();
 
                     setTimeout(() => {
-                        mostrarFormulario("usuarios", null)
+                        mensajecreacion.innerText = '';
+                        mensajecreacion.classList.remove('alerta-exito');
+                        mostrarFormulario('usuarios');
                     }, 2000);
                 } else {
                     const error = await response.json();
+                    const mensajecreacion = document.getElementById('mensajecreacion');
                     mensajecreacion.innerText = `Error: ${error.error}`;
                     mensajecreacion.classList.remove('alerta-exito');
                     mensajecreacion.classList.add('alerta');
+
+                    setTimeout(() => {
+                        mensajecreacion.innerText = '';
+                        mensajecreacion.classList.remove('alerta');
+                    }, 3000);
                 }
             } catch (error) {
-                mensajecreacion.innerText = `Error: ${error.error}`;
+                const mensajecreacion = document.getElementById('mensajecreacion');
+                mensajecreacion.innerText = `Error: ${error.message}`;
                 mensajecreacion.classList.remove('alerta-exito');
                 mensajecreacion.classList.add('alerta');
+
+                setTimeout(() => {
+                    mensajecreacion.innerText = '';
+                    mensajecreacion.classList.remove('alerta');
+                }, 3000);
             }
         });
     } else {
