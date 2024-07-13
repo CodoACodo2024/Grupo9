@@ -154,6 +154,34 @@ npm start
 
 5. Abre index.html en el navegador para ver la interfaz de usuario.
 
+## Proyecto de BackEnd:
+
+Como parte del BackEnd, realizamos el CRUD de usuarios. 
+
+Creamos un acceso en el menú llamado "BackEnd" en donde colocamos las operaciones del CRUD.
+
+![CRUD](ImagenesProyecto/BE_2.png)
+
+#### CRUD:
+
+![CRUD](ImagenesProyecto/BE_3.png)
+
+![CRUD](ImagenesProyecto/BE_4.png)
+
+![CRUD](ImagenesProyecto/BE_9.png)
+
+Cada operación notifica si la acción pudo ser concretada o no, por ejemplo:
+
+![CRUD](ImagenesProyecto/BE_5.png)
+
+![CRUD](ImagenesProyecto/BE_8.png)
+
+![CRUD](ImagenesProyecto/BE_6.png)
+
+![CRUD](ImagenesProyecto/BE_7.png)
+
+#### Video demostración
+
 #### Contribuciones
 
 Si se desea contribuir a este proyecto, por favor sigue estos pasos:
@@ -163,5 +191,3 @@ Si se desea contribuir a este proyecto, por favor sigue estos pasos:
 3. Realizar los cambios y hacer commit (git commit -am 'Descripción del cambio').
 4. Realizar push a la rama (git push origin feature/nueva-funcionalidad).
 5. Solicitar un Pull Request.
-
-## Video demostración
