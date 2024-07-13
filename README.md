@@ -160,9 +160,13 @@ Como parte del BackEnd, realizamos el CRUD de usuarios.
 
 Creamos un acceso en el menú llamado "BackEnd" en donde colocamos las operaciones del CRUD.
 
-![CRUD](ImagenesProyecto/BE_2.png)
+![Acceso al Backend](ImagenesProyecto/BE_1.png)
+
+Se puede acceder al CRUD desde la opción "Usuarios" o desde cada opción de menú.
 
 #### CRUD:
+
+![CRUD](ImagenesProyecto/BE_2.png)
 
 ![CRUD](ImagenesProyecto/BE_3.png)
 
