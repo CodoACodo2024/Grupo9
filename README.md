@@ -186,7 +186,7 @@ Cada operación notifica si la acción pudo ser concretada o no, por ejemplo:
 
 ### Video demostración
 
-[Video de Demostración]([https://www.example.com/tu-video](https://www.loom.com/share/1e813a9c2a584416bc70b30677587a6a))
+[Video demostración](https://www.loom.com/share/1e813a9c2a584416bc70b30677587a6a)
 
 #### Contribuciones
 
